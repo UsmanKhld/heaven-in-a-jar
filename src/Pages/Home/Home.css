@@ -1,0 +1,31 @@
+main {
+  padding-top: 10px;
+}
+
+.home-hero {
+  width: min(100%, 1920px);
+  aspect-ratio: 16 / 9;
+  background-image: url("../../assets/home-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.shelf {
+  width: 60rem;
+  height: 48rem;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(3, 1fr); /* 3 rows */
+}
+
+.dessert:hover {
+  width: 75%;
+  cursor: pointer;
+}
+
+.dessert {
+  transition: width 0.3s ease; /* Smooth transition for the width */
+}
