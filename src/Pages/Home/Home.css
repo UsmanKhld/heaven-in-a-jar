@@ -1,31 +1,66 @@
 main {
-  padding-top: 10px;
+	padding-top: 10px;
 }
 
 .home-hero {
-  width: min(100%, 1920px);
-  aspect-ratio: 16 / 9;
-  background-image: url("../../assets/home-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 0 auto;
+	aspect-ratio: 16 / 9;
+	background-image: url("../../assets/home-bg.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	overflow: hidden; /* Ensures the sides are cut off */
 }
 
 .shelf {
-  width: 60rem;
-  height: 48rem;
-  margin-bottom: 5rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  grid-template-rows: repeat(3, 1fr); /* 3 rows */
-}
-
-.dessert:hover {
-  width: 75%;
-  cursor: pointer;
+	width: 60%;
+	margin-bottom: 5%;
+	height: 70%; /* Dynamically adjust height */
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /* Always 4 columns */
+	grid-template-rows: repeat(3, 1fr); /* Always 3 rows */
+	gap: 1rem; /* Spacing between grid items */
 }
 
 .dessert {
-  transition: width 0.3s ease; /* Smooth transition for the width */
+	width: 60%; /* Take up full width of grid cell */
+	max-width: 10rem; /* Restrict maximum size */
+	transition: all 0.3s ease; /* Smooth transition */
+}
+
+.dessert:hover {
+	transform: scale(1.1); /* Slight enlargement on hover */
+	cursor: pointer;
+}
+
+/* Media Queries for Shrinking Images */
+@media (max-width: 1024px) {
+	.shelf {
+		grid-template-columns: repeat(4, 1fr); /* Keep 4 columns */
+		grid-template-rows: repeat(3, 1fr); /* Keep 3 rows */
+	}
+
+	.dessert {
+		max-width: 8rem; /* Shrink image size */
+	}
+}
+
+@media (max-width: 768px) {
+	.shelf {
+		grid-template-columns: repeat(4, 1fr); /* Keep 4 columns */
+	}
+
+	.dessert {
+		max-width: 6rem; /* Shrink image size further */
+	}
+}
+
+@media (max-width: 480px) {
+	.shelf {
+		grid-template-columns: repeat(4, 1fr); /* Keep 4 columns */
+	}
+
+	.dessert {
+		max-width: 4rem; /* Smallest image size */
+	}
 }

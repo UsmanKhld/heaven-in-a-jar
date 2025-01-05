@@ -1,43 +1,32 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import "./Home.css";
-import homeBg from "../../assets/home-bg.png";
-import bisCake from "../../assets/biscuit-cake.png"; // Example image
+
+const images = Object.entries(
+	import.meta.glob("../../assets/desserts/*.{png,jpg,jpeg,svg}", {
+		eager: true,
+	})
+).map(([path, module]) => module.default);
 
 const Home = () => {
-  const desserts = [
-    { src: bisCake, alt: "biscuit cake" },
-    { src: bisCake, alt: "another dessert" },
-    { src: bisCake, alt: "biscuit cake" },
-    { src: bisCake, alt: "another dessert" },
-    { src: bisCake, alt: "biscuit cake" },
-    { src: bisCake, alt: "another dessert" },
-    { src: bisCake, alt: "biscuit cake" },
-    { src: bisCake, alt: "another dessert" },
-    { src: bisCake, alt: "biscuit cake" },
-    { src: bisCake, alt: "another dessert" },
-    { src: bisCake, alt: "biscuit cake" },
-    { src: bisCake, alt: "another dessert" },
-  ];
-
-  return (
-    <div>
-      <Navbar />
-      <main className="home-hero flex justify-center items-end">
-        <div className="shelf">
-          {desserts.map((dessert, index) => (
-            <div key={index} className="flex items-end justify-center">
-              <img
-                src={dessert.src}
-                alt={dessert.alt}
-                className="w-40 dessert"
-              />
-            </div>
-          ))}
-        </div>
-      </main>
-    </div>
-  );
+	return (
+		<div>
+			<Navbar />
+			<main className="home-hero flex justify-center items-end">
+				<div className="shelf">
+					{images.map((src, index) => (
+						<div key={index} className="flex items-end justify-center">
+							<img
+								src={src}
+								alt={`dessert ${index + 1}`}
+								className=" dessert"
+							/>
+						</div>
+					))}
+				</div>
+			</main>
+		</div>
+	);
 };
 
 export default Home;
