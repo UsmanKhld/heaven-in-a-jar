@@ -1,66 +1,118 @@
 main {
-	padding-top: 10px;
+  padding-top: 10px;
 }
 
 .home-hero {
-	aspect-ratio: 16 / 9;
-	background-image: url("../../assets/home-bg.png");
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	margin: 0 auto;
-	overflow: hidden; /* Ensures the sides are cut off */
+  aspect-ratio: 16 / 9;
+  background-image: url("../../assets/home-bg.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  overflow: hidden; /* Ensures the sides are cut off */
 }
 
 .shelf {
-	width: 60%;
-	margin-bottom: 5%;
-	height: 70%; /* Dynamically adjust height */
-	display: grid;
-	grid-template-columns: repeat(4, 1fr); /* Always 4 columns */
-	grid-template-rows: repeat(3, 1fr); /* Always 3 rows */
-	gap: 1rem; /* Spacing between grid items */
+  width: 60%;
+  margin-bottom: 5%;
+  height: 70%; /* Dynamically adjust height */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Always 4 columns */
+  grid-template-rows: repeat(3, 1fr); /* Always 3 rows */
+  gap: 1rem; /* Spacing between grid items */
 }
 
 .dessert {
-	width: 60%; /* Take up full width of grid cell */
-	max-width: 10rem; /* Restrict maximum size */
-	transition: all 0.3s ease; /* Smooth transition */
-}
-
-.dessert:hover {
-	transform: scale(1.1); /* Slight enlargement on hover */
-	cursor: pointer;
+  width: 60%; /* Take up full width of grid cell */
+  max-width: 10rem; /* Restrict maximum size */
+  transition: transform 0.3s ease, z-index 0.3s ease; /* Smooth transition */
 }
 
 /* Media Queries for Shrinking Images */
 @media (max-width: 1024px) {
-	.shelf {
-		grid-template-columns: repeat(4, 1fr); /* Keep 4 columns */
-		grid-template-rows: repeat(3, 1fr); /* Keep 3 rows */
-	}
+  .shelf {
+    grid-template-columns: repeat(4, 1fr); /* Keep 4 columns */
+    grid-template-rows: repeat(3, 1fr); /* Keep 3 rows */
+  }
 
-	.dessert {
-		max-width: 8rem; /* Shrink image size */
-	}
+  .dessert {
+    max-width: 8rem; /* Shrink image size */
+  }
 }
 
 @media (max-width: 768px) {
-	.shelf {
-		grid-template-columns: repeat(4, 1fr); /* Keep 4 columns */
-	}
+  .shelf {
+    grid-template-columns: repeat(4, 1fr); /* Keep 4 columns */
+  }
 
-	.dessert {
-		max-width: 6rem; /* Shrink image size further */
-	}
+  .dessert {
+    max-width: 6rem; /* Shrink image size further */
+  }
 }
 
 @media (max-width: 480px) {
-	.shelf {
-		grid-template-columns: repeat(4, 1fr); /* Keep 4 columns */
-	}
+  .shelf {
+    grid-template-columns: repeat(4, 1fr); /* Keep 4 columns */
+  }
 
-	.dessert {
-		max-width: 4rem; /* Smallest image size */
-	}
+  .dessert {
+    max-width: 4rem; /* Smallest image size */
+  }
+}
+
+.modal {
+  background: #6f4518;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal-title {
+  color: #ffedd8;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.modal-description {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.modal-button {
+  background: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.modal-button:hover {
+  background: #45a049;
+}
+
+.modal-close {
+  background: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background: #e53935;
 }
