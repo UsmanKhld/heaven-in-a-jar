@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'dm-serif': ['"DM Serif Text"', 'serif']
+        'dm-serif': ['"DM Serif Text"', 'serif'],
+        'fredricka': ['"Fredericka the Great"', 'cursive']
       }
     },
   },

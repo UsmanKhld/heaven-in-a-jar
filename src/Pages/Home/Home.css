@@ -1,180 +1,183 @@
-main {
-	padding-top: 10px;
-}
-
 .home-hero {
-	aspect-ratio: 16 / 9;
-	background-image: url("../../assets/home-bg.png");
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	margin: 0 auto;
-	overflow: hidden; /* Ensures the sides are cut off */
+  aspect-ratio: 16 / 9;
+  background-image: url("../../assets/home-bg.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  overflow: hidden; /* Ensures the sides are cut off */
 }
 
 .shelf {
-	width: 60%;
-	margin-bottom: 5%;
-	height: 70%; /* Dynamically adjust height */
-	display: grid;
-	grid-template-columns: repeat(4, 1fr); /* Always 4 columns */
-	grid-template-rows: repeat(3, 1fr); /* Always 3 rows */
-	gap: 1rem; /* Spacing between grid items */
+  width: 60%;
+  margin-bottom: 5%;
+  height: 70%; /* Dynamically adjust height */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Always 4 columns */
+  grid-template-rows: repeat(3, 1fr); /* Always 3 rows */
+  gap: 1rem; /* Spacing between grid items */
 }
 
 .dessert {
-	width: 60%; /* Take up full width of grid cell */
-	max-width: 10rem; /* Restrict maximum size */
-	transition: transform 0.3s ease, z-index 0.3s ease; /* Smooth transition */
+  width: 60%; /* Take up full width of grid cell */
+  max-width: 10rem; /* Restrict maximum size */
+  transition: transform 0.3s ease, z-index 0.3s ease; /* Smooth transition */
 }
 
 /* Media Queries for Shrinking Images */
 @media (max-width: 1024px) {
-	.shelf {
-		grid-template-columns: repeat(4, 1fr); /* Keep 4 columns */
-		grid-template-rows: repeat(3, 1fr); /* Keep 3 rows */
-	}
+  .shelf {
+    grid-template-columns: repeat(4, 1fr); /* Keep 4 columns */
+    grid-template-rows: repeat(3, 1fr); /* Keep 3 rows */
+  }
 
-	.dessert {
-		max-width: 8rem; /* Shrink image size */
-	}
+  .dessert {
+    max-width: 8rem; /* Shrink image size */
+  }
 }
 
 @media (max-width: 768px) {
-	.shelf {
-		grid-template-columns: repeat(4, 1fr); /* Keep 4 columns */
-	}
+  .shelf {
+    grid-template-columns: repeat(4, 1fr); /* Keep 4 columns */
+  }
 
-	.dessert {
-		max-width: 6rem; /* Shrink image size further */
-	}
+  .dessert {
+    max-width: 6rem; /* Shrink image size further */
+  }
 }
 
 @media (max-width: 480px) {
-	.shelf {
-		grid-template-columns: repeat(4, 1fr); /* Keep 4 columns */
-	}
+  .shelf {
+    grid-template-columns: repeat(4, 1fr); /* Keep 4 columns */
+  }
 
-	.dessert {
-		max-width: 4rem; /* Smallest image size */
-	}
+  .dessert {
+    max-width: 4rem; /* Smallest image size */
+  }
 }
 
 .modal {
-	background: white;
-	padding: 20px;
-	border-radius: 10px;
-	width: 300px;
-	text-align: center;
-	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-	z-index: 50;
-	opacity: 0;
-	transform: translateY(-20px);
-	transition: opacity 0.3s ease, transform 0.3s ease;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  background-image: url("../../assets/chalkboard.png");
+  background-size: 120%; /* Ensures the image covers the entire modal */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  font-family: "Fredericka the Great", cursive;
+  color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 300px;
+  height: auto; /* Add a height or adjust as needed */
+  padding: 30px; /* Adjust padding for content spacing */
+  text-align: center;
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+  z-index: 50;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-show {
-	opacity: 1;
-	transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .modal-title {
-	color: black;
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 10px;
+  color: white;
+  font-size: x-large;
+  margin-bottom: 10px;
+  font-family: "Fredericka the Great", cursive;
 }
 
 .modal-description {
-	margin-bottom: 20px;
-	font-size: 14px;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
 .modal-close {
-	background: #f44336;
-	color: white;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
+  background: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .modal-close:hover {
-	background: #e53935;
+  background: #e53935;
 }
 
 /* From Uiverse.io by vinodjangid07 */
 .cartBtn {
-	width: 155px;
-	height: 50px;
-	border: none;
-	border-radius: 0px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 7px;
-	color: white;
-	font-weight: 500;
-	position: relative;
-	background-color: rgb(29, 29, 29);
-	box-shadow: 0 20px 30px -7px rgba(27, 27, 27, 0.219);
-	transition: all 0.3s ease-in-out;
-	cursor: pointer;
-	overflow: hidden;
+  width: 155px;
+  height: 50px;
+  border: none;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  background-color: rgb(29, 29, 29);
+  box-shadow: 0 20px 30px -7px rgba(27, 27, 27, 0.219);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .cart {
-	z-index: 2;
+  z-index: 2;
 }
 
 .cartBtn:active {
-	transform: scale(0.96);
+  transform: scale(0.96);
 }
 
 .product {
-	position: absolute;
-	width: 12px;
-	border-radius: 3px;
-	content: "";
-	left: 23px;
-	bottom: 23px;
-	opacity: 0;
-	z-index: 1;
-	fill: rgb(211, 211, 211);
+  position: absolute;
+  width: 12px;
+  border-radius: 3px;
+  content: "";
+  left: 23px;
+  bottom: 23px;
+  opacity: 0;
+  z-index: 1;
+  fill: rgb(211, 211, 211);
 }
 
 .cartBtn:hover .product {
-	animation: slide-in-top 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @keyframes slide-in-top {
-	0% {
-		transform: translateY(-30px);
-		opacity: 1;
-	}
+  0% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
 
-	100% {
-		transform: translateY(0) rotate(-90deg);
-		opacity: 1;
-	}
+  100% {
+    transform: translateY(0) rotate(-90deg);
+    opacity: 1;
+  }
 }
 
 .cartBtn:hover .cart {
-	animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @keyframes slide-in-left {
-	0% {
-		transform: translateX(-10px);
-		opacity: 0;
-	}
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
 
-	100% {
-		transform: translateX(0);
-		opacity: 1;
-	}
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
