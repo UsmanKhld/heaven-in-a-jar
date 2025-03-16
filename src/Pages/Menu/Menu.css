@@ -1,0 +1,38 @@
+.menu-container {
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.category-title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.menu-items {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 24px;
+	width: 100%;
+}
+
+.menu-card {
+	height: 300px;
+	width: 100%;
+	max-width: 300px;
+	padding: 16px;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.menu-image {
+	width: 100%;
+	height: auto;
+	max-height: 150px;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-bottom: 8px;
+}
