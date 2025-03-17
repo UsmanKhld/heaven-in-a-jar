@@ -1,15 +1,19 @@
 .menu-container {
-	padding: 16px;
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-top: 100px;
 	display: flex;
 	flex-direction: column;
 	gap: 32px;
 }
 
 .category-title {
-	font-size: 1.5rem;
+	font-size: 5rem;
 	font-weight: bold;
-	margin-bottom: 16px;
+	margin-bottom: 100px;
 	text-align: center;
+	font-family: "Quintessential", serif;
+	color:#583101;
 }
 
 .menu-items {

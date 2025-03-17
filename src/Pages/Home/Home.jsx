@@ -59,7 +59,7 @@ const Home = () => {
     },
     {
       src: bisCake,
-      alt: "biscuit cake",
+      alt: "Biscuit Cake",
       description:
         "Layers of melted milk chocolate and crushed Marie tea biscuits topped with creamy whipped cream.",
     },
