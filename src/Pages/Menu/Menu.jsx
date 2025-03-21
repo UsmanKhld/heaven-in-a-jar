@@ -16,7 +16,7 @@ const Menu = () => {
   return (
     <div>
       <Navbar />
-      <main className="bg-[#F3D5B5]">
+      <main className="bg-[#FFEDD8]">
         <div className="menu-container">
           {Object.keys(menuData).map((category) => (
             <div key={category} className="menu-category">

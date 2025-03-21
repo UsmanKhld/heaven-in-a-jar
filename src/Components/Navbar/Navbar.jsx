@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#D4A276] px-4 py-6 shadow-md sticky z-50 top-0">
+    <nav className="bg-[#F3D5B5] px-4 py-6 shadow-md sticky z-50 top-0">
       <div className="container mx-auto">
         <div className="nav-items flex items-center justify-between text-xl">
           {/* Left Side Navigation (hidden on mobile) */}
