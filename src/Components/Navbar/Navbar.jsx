@@ -101,9 +101,11 @@ const Navbar = () => {
             >
               About
             </a>
-            <button className="text-brown-800 hover:text-brown-600">
-              <HiShoppingCart className="w-6 h-6" />
-            </button>
+            <a href="/cart">
+              <button className="text-brown-800 hover:text-brown-600">
+                <HiShoppingCart className="w-6 h-6" />
+              </button>
+            </a>
             <button className="bg-brown-800 text-white py-2 rounded-full hover:bg-brown-700 transition-colors">
               Order Now
             </button>

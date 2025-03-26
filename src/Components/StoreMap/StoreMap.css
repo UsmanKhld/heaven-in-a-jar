@@ -1,0 +1,22 @@
+.map-wrapper {
+  background-color: rgb(29, 29, 29); /* Dark brown background */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.map-title {
+  color:#FFEDD8; /* White text color */
+  font-size: 4rem; /* Large font size */
+  margin-bottom: 2rem; /* Space below the title */
+  font-family: "Dancing Script", cursive;
+}
+
+.map-container {
+  width: 80%; /* Centered map with 80% width */
+  height: 60%; /* Fixed height for the map */
+  border: 2px solid #3a1f1f; /* Optional border for styling */
+  border-radius: 8px; /* Rounded corners */
+}

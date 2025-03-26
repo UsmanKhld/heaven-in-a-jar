@@ -7,8 +7,10 @@ export const HomeAbout = () => {
     <div className="ha_container">
       <div className="ha_background">
         <div className="ha_content">
-          <h1>Heaven In A Jar</h1>
-          <p>Your one stop shop to satisfy all your sweet cravings</p>
+          <h1 className="">Heaven In A Jar</h1>
+          <p className="shadow-2xl">
+            Your one stop shop to satisfy all your sweet cravings
+          </p>
           {/* Add more content/information here */}
           <div className="ha_info">
             <a

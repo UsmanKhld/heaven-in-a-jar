@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import { HomeAbout } from "../../Components/HomeAbout/HomeAbout";
 import Carousel from "../../Components/Carousel/Carousel";
+import StoreMap from "../../Components/StoreMap/StoreMap";
 import "./Home.css";
 import bisCake from "../../assets/desserts/biscuit-cake.png";
 import Banana from "../../assets/desserts/Banana Pudding.png";
@@ -108,7 +109,7 @@ const Home = () => {
       <Navbar />
       <main>
         <HomeAbout />
-        <Carousel />
+        {/* <Carousel /> */}
         <div className="home-hero">
           <div className="w-full h-full flex justify-center items-end">
             <div className="shelf">
@@ -172,6 +173,7 @@ const Home = () => {
             </div>
           )}
         </div>
+        <StoreMap />
       </main>
     </div>
   );
