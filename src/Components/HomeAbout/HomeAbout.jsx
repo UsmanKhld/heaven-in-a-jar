@@ -7,7 +7,7 @@ export const HomeAbout = () => {
     <div className="ha_container">
       <div className="ha_background">
         <div className="ha_content">
-          <h1 className="">Heaven In A Jar</h1>
+          <h1 className="">Heaven In A Jar Desserts</h1>
           <p className="shadow-2xl">
             Your one stop shop to satisfy all your sweet cravings
           </p>
