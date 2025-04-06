@@ -1,5 +1,5 @@
 const functions = require('firebase-functions');
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const stripe = require('stripe')(functions.config().stripe.secret_key);
 const cors = require('cors')({ origin: true });
 
 exports.createCheckoutSession = functions.https.onRequest((req, res) => {
@@ -10,6 +10,7 @@ exports.createCheckoutSession = functions.https.onRequest((req, res) => {
 
     try {
       const { items } = req.body;
+      const origin = req.headers.origin || 'http://localhost:3000';
       
       // Format line items for Stripe
       const lineItems = items.map(item => ({
@@ -18,11 +19,6 @@ exports.createCheckoutSession = functions.https.onRequest((req, res) => {
           product_data: {
             name: item.name,
             images: item.imageUrl ? [item.imageUrl] : [],
-            metadata: {
-              id: item.id,
-              category: item.category,
-              size: item.size
-            }
           },
           unit_amount: Math.round(item.price * 100), // Stripe uses cents
         },
@@ -34,8 +30,8 @@ exports.createCheckoutSession = functions.https.onRequest((req, res) => {
         payment_method_types: ['card'],
         line_items: lineItems,
         mode: 'payment',
-        success_url: `${process.env.CLIENT_URL}/checkout/success?session_id={CHECKOUT_SESSION_ID}`,
-        cancel_url: `${process.env.CLIENT_URL}/cart`,
+        success_url: `${origin}/checkout/success?session_id={CHECKOUT_SESSION_ID}`,
+        cancel_url: `${origin}/cart`,
       });
 
       return res.status(200).json({ url: session.url });

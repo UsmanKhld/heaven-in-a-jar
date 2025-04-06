@@ -5,6 +5,7 @@ import "./Cart.css";
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
+  const [isProcessing, setIsProcessing] = useState(false);
 
   useEffect(() => {
     // Load cart items from localStorage
@@ -35,6 +36,30 @@ const Cart = () => {
     setCartItems([]);
     setTotalPrice(0);
     localStorage.removeItem("cart");
+  };
+
+  const handleCheckout = async () => {
+    setIsProcessing(true);
+    try {
+      // Replace with your actual function URL
+      const response = await fetch('https://us-central1-heaven-in-a-jar.cloudfunctions.net/createCheckoutSession', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          items: cartItems,
+        }),
+      });
+      
+      const { url } = await response.json();
+      
+      // Redirect to Stripe Checkout
+      window.location.href = url;
+    } catch (error) {
+      console.error('Error redirecting to checkout:', error);
+      setIsProcessing(false);
+    }
   };
 
   return (
@@ -80,7 +105,13 @@ const Cart = () => {
                 <button className="clear-cart-btn" onClick={clearCart}>
                   Clear Cart
                 </button>
-                <button className="checkout-btn">Proceed to Checkout</button>
+                <button 
+                  className="checkout-btn" 
+                  onClick={handleCheckout}
+                  disabled={isProcessing}
+                >
+                  {isProcessing ? 'Processing...' : 'Proceed to Checkout'}
+                </button>
               </div>
             </div>
           </>

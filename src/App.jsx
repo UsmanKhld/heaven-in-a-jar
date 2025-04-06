@@ -7,6 +7,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import { Home, Menu, Cart } from "./Pages/index";
+import CheckoutSuccess from "./Pages/CheckoutSuccess/CheckoutSuccess";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout/success" element={<CheckoutSuccess />} />
         </Routes>
       </div>
     </Router>
