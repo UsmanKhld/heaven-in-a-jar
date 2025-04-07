@@ -22,6 +22,11 @@ const Menu = () => {
     }
   }, []);
 
+  const clearCart = () => {
+    setCart([]);
+    localStorage.removeItem("cart");
+  };
+
   // Hide toast after 3 seconds
   useEffect(() => {
     if (toast.show) {
@@ -67,74 +72,105 @@ const Menu = () => {
           </div>
         )}
         <div className="menu-container">
-          {Object.keys(menuData).map((category) => (
-            <div key={category} className="menu-category">
-              <h2 className="category-title text-3xl">
-                {category.toUpperCase()}
-              </h2>
-              <div className="menu-items">
-                {Object.keys(menuData[category]).map((itemKey) => {
-                  const item = menuData[category][itemKey];
-                  return (
-                    <div key={itemKey} className="menu-card">
-                      {item.imageUrl && (
-                        <img
-                          src={item.imageUrl}
-                          alt={item.name}
-                          className="menu-image"
-                        />
-                      )}
-                      <h3 className="menu-item-title">{item.name}</h3>
-                      <p className="menu-description">{item.description}</p>
-                      {category.toLowerCase() === "shakes" ? (
-                        <div>
-                          <p className="menu-prices">
-                            16oz: ${item.prices?.["16oz"] || "N/A"} | 24oz: $
-                            {item.prices?.["24oz"] || "N/A"}
-                          </p>
-                          <div className="cart-buttons">
-                            <button
-                              onClick={() => addToCart(item, category, "16oz")}
-                              className="add-to-cart-btn"
-                            >
-                              Add 16oz to Cart
-                            </button>
-                            <button
-                              onClick={() => addToCart(item, category, "24oz")}
-                              className="add-to-cart-btn"
-                            >
-                              Add 24oz to Cart
-                            </button>
-                          </div>
+          <button className="clear-cart-btn" onClick={clearCart}>
+            Clear Cart
+          </button>
+          {["desserts", "shakes", "acai in a jar", "overnight oats"].map(
+            (category) =>
+              menuData[category] && (
+                <div key={category} className="menu-category">
+                  <h2 className="category-title text-3xl">
+                    {category.toUpperCase()}
+                  </h2>
+                  <div className="menu-items">
+                    {Object.keys(menuData[category] || {}).map((itemKey) => {
+                      const item = menuData[category][itemKey];
+                      return (
+                        <div key={itemKey} className="menu-card">
+                          {item.imageUrl && (
+                            <img
+                              src={item.imageUrl}
+                              alt={item.name}
+                              className="menu-image"
+                            />
+                          )}
+                          <h3 className="menu-item-title">{item.name}</h3>
+                          <p className="menu-description">{item.description}</p>
+                          {category.toLowerCase() === "shakes" ? (
+                            <div>
+                              <p className="menu-prices">
+                                16oz: ${item.prices?.["16oz"] || "N/A"} | 24oz:
+                                ${item.prices?.["24oz"] || "N/A"}
+                              </p>
+                              <div className="cart-buttons">
+                                <button
+                                  onClick={() =>
+                                    addToCart(item, category, "16oz")
+                                  }
+                                  className="add-to-cart-btn"
+                                >
+                                  Add 16oz to Cart
+                                </button>
+                                <button
+                                  onClick={() =>
+                                    addToCart(item, category, "24oz")
+                                  }
+                                  className="add-to-cart-btn"
+                                >
+                                  Add 24oz to Cart
+                                </button>
+                              </div>
+                            </div>
+                          ) : category.toLowerCase() === "acai in a jar" ||
+                            category.toLowerCase() === "overnight oats" ? (
+                            <div>
+                              <p className="menu-prices">
+                                16oz: ${item.prices?.["16oz"] || "N/A"}
+                              </p>
+                              <div className="cart-buttons">
+                                <button
+                                  onClick={() =>
+                                    addToCart(item, category, "16oz")
+                                  }
+                                  className="add-to-cart-btn"
+                                >
+                                  Add 16oz to Cart
+                                </button>
+                              </div>
+                            </div>
+                          ) : (
+                            <div>
+                              <p className="menu-prices">
+                                8oz: ${item.prices?.["8oz"] || "N/A"} | 16oz: $
+                                {item.prices?.["16oz"] || "N/A"}
+                              </p>
+                              <div className="cart-buttons">
+                                <button
+                                  onClick={() =>
+                                    addToCart(item, category, "8oz")
+                                  }
+                                  className="add-to-cart-btn"
+                                >
+                                  Add 8oz to Cart
+                                </button>
+                                <button
+                                  onClick={() =>
+                                    addToCart(item, category, "16oz")
+                                  }
+                                  className="add-to-cart-btn"
+                                >
+                                  Add 16oz to Cart
+                                </button>
+                              </div>
+                            </div>
+                          )}
                         </div>
-                      ) : (
-                        <div>
-                          <p className="menu-prices">
-                            8oz: ${item.prices?.["8oz"] || "N/A"} | 16oz: $
-                            {item.prices?.["16oz"] || "N/A"}
-                          </p>
-                          <div className="cart-buttons">
-                            <button
-                              onClick={() => addToCart(item, category, "8oz")}
-                              className="add-to-cart-btn"
-                            >
-                              Add 8oz to Cart
-                            </button>
-                            <button
-                              onClick={() => addToCart(item, category, "16oz")}
-                              className="add-to-cart-btn"
-                            >
-                              Add 16oz to Cart
-                            </button>
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          ))}
+                      );
+                    })}
+                  </div>
+                </div>
+              )
+          )}
         </div>
       </main>
     </div>

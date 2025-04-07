@@ -141,6 +141,52 @@
 				"prices": { "16oz": 7.26, "24oz": 8.34 },
 				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FReesesIcecreamShake.webp?alt=media&token=4f402135-10c8-4732-8942-73f1d5ced21b"
 			}
+		},
+		"acai in a jar": {
+			"acaiInAJar": {
+				"name": "Acai in a Jar",
+				"description": "Smooth blend of acai, strawberries, blueberries, and banana with 3 options for toppings",
+				"prices": { "16oz": 8.99 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Facai%2FAcai%20in%20a%20Jar.jpeg?alt=media&token=b93f9d4f-15dc-4e61-a18f-80f8e66ccb27"
+			}
+		},
+		"overnight oats": {
+			"raspberryOats": {
+				"name": "Raspberry Oats",
+				"description": "Our special soaked oatmeal, with strawberry greek yogurt, topped with raspberries",
+				"prices": { "16oz": 6.99 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_RaspberryOatsInAJar_2880x2304.jpg?alt=media&token=ae4bc160-cf21-4cdd-b07a-a10caa0083ff"
+			},
+			"strawberryOats": {
+				"name": "Strawberry Oats",
+				"description": "Our special soaked oatmeal, with strawberry greek yogurt, topped with strawberries",
+				"prices": { "16oz": 6.99 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_StrawberryOatsInAJar_2880x2304.jpg?alt=media&token=27076658-ba93-47c7-ba58-39fde125eef0"
+			},
+			"apricotWalnutOats": {
+				"name": "Apricot Walnut Oats",
+				"description": "Our special soaked oatmeal, with peach greek yogurt, topped with dried apricots and walnuts",
+				"prices": { "16oz": 6.99 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_Apricot%26WallnutsOatsInAJar_2880x2304.jpg?alt=media&token=51ba740a-c5f4-4ff8-a291-b054d7a82f8a"
+			},
+			"blueberryOats": {
+				"name": "Blueberry Oats",
+				"description": "Our special soaked oatmeal, with blueberry greek yogurt, topped with blueberries",
+				"prices": { "16oz": 6.99 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_BlackberryOatsInAJar_2880x2304.jpg?alt=media&token=56182b58-2488-48f1-9614-3d13fd2e4237"
+			},
+			"blackberryOats": {
+				"name": "Blackberry Oats",
+				"description": "Our special soaked oatmeal, with blueberry greek yogurt, topped with blackberries",
+				"prices": { "16oz": 6.99 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_BlackberryOatsInAJar_2880x2304.jpg?alt=media&token=56182b58-2488-48f1-9614-3d13fd2e4237"
+			},
+			"bananaOats": {
+				"name": "Banana Oats",
+				"description": "Our special soaked oatmeal, with banana greek yogurt, topped with banana chips",
+				"prices": { "16oz": 6.99 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_Apricot%26WallnutsOatsInAJar_2880x2304.jpg?alt=media&token=51ba740a-c5f4-4ff8-a291-b054d7a82f8a"
+			}
 		}
 	},
 	"carousel" : {

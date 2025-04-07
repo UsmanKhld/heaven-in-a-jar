@@ -102,13 +102,10 @@ const Navbar = () => {
               About
             </a>
             <a href="/cart">
-              <button className="text-brown-800 hover:text-brown-600">
+              <button className="text-brown-800 hover:text-brown-600 mr-24">
                 <HiShoppingCart className="w-6 h-6" />
               </button>
             </a>
-            <button className="bg-brown-800 text-white py-2 rounded-full hover:bg-brown-700 transition-colors">
-              Order Now
-            </button>
           </div>
         </div>
 
@@ -216,9 +213,6 @@ const Navbar = () => {
               <button className="flex items-center text-brown-800">
                 <HiShoppingCart className="w-6 h-6 mr-2" />
                 Cart
-              </button>
-              <button className="w-full bg-brown-800 text-white px-6 py-2 rounded-full hover:bg-brown-700 transition-colors">
-                Order Now
               </button>
             </div>
           </div>
