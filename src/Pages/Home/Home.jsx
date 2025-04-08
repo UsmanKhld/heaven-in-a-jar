@@ -3,6 +3,8 @@ import Navbar from "../../Components/Navbar/Navbar";
 import { HomeAbout } from "../../Components/HomeAbout/HomeAbout";
 import Carousel from "../../Components/Carousel/Carousel";
 import StoreMap from "../../Components/StoreMap/StoreMap";
+import Spotlight from "../../Components/Spotlight/Spotlight";
+import Footer from "../../Components/Footer/Footer";
 import "./Home.css";
 import bisCake from "../../assets/desserts/biscuit-cake.png";
 import Banana from "../../assets/desserts/Banana Pudding.png";
@@ -109,6 +111,7 @@ const Home = () => {
       <Navbar />
       <main>
         <HomeAbout />
+        <Spotlight />
         {/* <Carousel /> */}
         <div className="home-hero">
           <div className="w-full h-full flex justify-center items-end">
@@ -175,6 +178,7 @@ const Home = () => {
         </div>
         <StoreMap />
       </main>
+      <Footer />
     </div>
   );
 };

@@ -103,14 +103,40 @@
 	background-color: #6D4C41;
 }
 
-@media (max-width: 1200px) {
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1200px) {
 	.menu-container {
 		padding-left: 100px;
 		padding-right: 100px;
 	}
+	
+	.menu-items {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	}
+	
+	.menu-card {
+		max-width: 250px;
+		min-height: 380px;
+	}
+	
+	.menu-image {
+		height: 150px;
+	}
+	
+	.menu-item-title {
+		font-size: 1.2rem;
+	}
+	
+	.menu-description {
+		font-size: 0.85rem;
+	}
+	
+	.menu-prices {
+		font-size: 1rem;
+	}
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.menu-container {
 		padding-left: 50px;
 		padding-right: 50px;
@@ -121,16 +147,90 @@
 		margin-bottom: 50px;
 		margin-top: 50px;
 	}
+	
+	.menu-items {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	}
+	
+	.menu-card {
+		max-width: 200px;
+		min-height: 350px;
+		padding: 15px;
+	}
+	
+	.menu-image {
+		height: 120px;
+	}
+	
+	.menu-item-title {
+		font-size: 1.1rem;
+	}
+	
+	.menu-description {
+		font-size: 0.8rem;
+	}
+	
+	.menu-prices {
+		font-size: 0.9rem;
+	}
+	
+	.add-to-cart-btn {
+		padding: 8px 12px;
+		font-size: 0.8rem;
+	}
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 	.menu-container {
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	.category-title {
+		font-size: 2.5rem;
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+	
+	.menu-items {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
+	
+	.menu-card {
+		max-width: none;
+		min-height: 280px;
+		padding: 10px;
+	}
+	
+	.menu-image {
+		height: 90px;
+	}
+	
+	.menu-item-title {
+		font-size: 0.9rem;
+	}
+	
+	.menu-description {
+		font-size: 0.7rem;
+		margin-bottom: 8px;
+	}
+	
+	.menu-prices {
+		font-size: 0.75rem;
+		margin-bottom: 8px;	
+		padding: 4px 0;
 	}
 	
 	.cart-buttons {
 		flex-direction: column;
+		gap: 4px;
+		margin-top: 8px;
+	}
+	
+	.add-to-cart-btn {
+		padding: 4px 8px;
+		font-size: 0.7rem;
 	}
 }
 

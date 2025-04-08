@@ -60,3 +60,50 @@
   font-size: 1.7rem;
   margin: 0.5rem 0;
 }
+
+/* Media Queries for Responsive Text */
+@media screen and (max-width: 1200px) {
+  .ha_content h1 {
+    font-size: 4rem;
+  }
+  
+  .ha_content p {
+    font-size: 1.3rem;
+  }
+  
+  .ha_info p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ha_content h1 {
+    font-size: 3rem;
+  }
+  
+  .ha_content p {
+    font-size: 1.1rem;
+  }
+  
+  .ha_info p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ha_content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .ha_content p {
+    font-size: 1rem;
+  }
+  
+  .ha_info p {
+    font-size: 1.1rem;
+  }
+  
+  .ha_content {
+    padding: 1rem;
+  }
+}

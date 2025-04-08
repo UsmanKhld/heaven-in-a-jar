@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh; /* Full viewport height */
+  z-index: 1;
 }
 
 .map-title {
@@ -19,4 +20,5 @@
   height: 60%; /* Fixed height for the map */
   border: 2px solid #3a1f1f; /* Optional border for styling */
   border-radius: 8px; /* Rounded corners */
+  z-index: 1;
 }

@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#F3D5B5] px-4 py-6 shadow-md sticky z-50 top-0">
+    <nav className="navbar">
       <div className="container mx-auto">
         <div className="nav-items flex items-center justify-between text-xl">
           {/* Left Side Navigation (hidden on mobile) */}
@@ -101,8 +101,14 @@ const Navbar = () => {
             >
               About
             </a>
+            <a
+              href="/careers"
+              className="text-black hover:text-amber-900 transition duration-300"
+            >
+              Careers
+            </a>
             <a href="/cart">
-              <button className="text-brown-800 hover:text-brown-600 mr-24">
+              <button className="text-brown-800 hover:text-brown-600">
                 <HiShoppingCart className="w-6 h-6" />
               </button>
             </a>
@@ -119,81 +125,19 @@ const Navbar = () => {
               Home
             </a>
 
-            {/* Mobile Menu Dropdown */}
-            <div className="px-4 py-2">
-              <button className="text-brown-800 w-full text-left">Menu</button>
-              <div className="pl-4 mt-2 space-y-2">
-                <a
-                  href="/menu/desserts"
-                  className="block py-2 text-brown-800 hover:bg-[#d3c1a5]"
-                >
-                  Desserts
-                </a>
-                <a
-                  href="/menu/coffee"
-                  className="block py-2 text-brown-800 hover:bg-[#d3c1a5]"
-                >
-                  Coffee
-                </a>
-                <a
-                  href="/menu/shakes"
-                  className="block py-2 text-brown-800 hover:bg-[#d3c1a5]"
-                >
-                  Shakes
-                </a>
-                <a
-                  href="/menu/oats"
-                  className="block py-2 text-brown-800 hover:bg-[#d3c1a5]"
-                >
-                  Oats
-                </a>
-                <a
-                  href="/menu/acai"
-                  className="block py-2 text-brown-800 hover:bg-[#d3c1a5]"
-                >
-                  Acai
-                </a>
-              </div>
-            </div>
+            <a
+              href="/menu"
+              className="block px-4 py-2 text-brown-800 hover:bg-[#d3c1a5]"
+            >
+              Menu
+            </a>
 
-            {/* Mobile Party Occasions Dropdown */}
-            <div className="px-4 py-2">
-              <button className="text-brown-800 w-full text-left">
-                Party Occasions
-              </button>
-              <div className="pl-4 mt-2 space-y-2">
-                <a
-                  href="/occasions/birthday"
-                  className="block py-2 text-brown-800 hover:bg-[#d3c1a5]"
-                >
-                  Birthday
-                </a>
-                <a
-                  href="/occasions/holidays"
-                  className="block py-2 text-brown-800 hover:bg-[#d3c1a5]"
-                >
-                  Holidays
-                </a>
-                <a
-                  href="/occasions/love"
-                  className="block py-2 text-brown-800 hover:bg-[#d3c1a5]"
-                >
-                  Love
-                </a>
-                <a
-                  href="/occasions/thank-you"
-                  className="block py-2 text-brown-800 hover:bg-[#d3c1a5]"
-                >
-                  Thank You
-                </a>
-                <a
-                  href="/occasions/christmas"
-                  className="block py-2 text-brown-800 hover:bg-[#d3c1a5]"
-                >
-                  Christmas
-                </a>
-              </div>
-            </div>
+            <a
+              href="/occasions"
+              className="block px-4 py-2 text-brown-800 hover:bg-[#d3c1a5]"
+            >
+              Part Occasions
+            </a>
 
             <a
               href="/catering"
@@ -206,6 +150,12 @@ const Navbar = () => {
               className="block px-4 py-2 text-brown-800 hover:bg-[#d3c1a5]"
             >
               About
+            </a>
+            <a
+              href="/careers"
+              className="block px-4 py-2 text-brown-800 hover:bg-[#d3c1a5]"
+            >
+              Careers
             </a>
 
             {/* Mobile Cart and Order Button */}

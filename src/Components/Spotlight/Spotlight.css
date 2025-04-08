@@ -1,0 +1,77 @@
+.spotlight-container {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #FFEDD8;
+}
+
+.spotlight-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.spotlight-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #040404;
+  margin-bottom: 2rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.spotlight-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.spotlight-image {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.spotlight-image:hover {
+  transform: scale(1.02);
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1200px) {
+  .spotlight-title {
+    font-size: 2.2rem;
+  }
+  
+  .spotlight-image {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .spotlight-title {
+    font-size: 1.8rem;
+    letter-spacing: 0.15em;
+  }
+  
+  .spotlight-image {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .spotlight-title {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+  }
+  
+  .spotlight-image {
+    max-width: 85%;
+  }
+  
+  .spotlight-container {
+    padding: 1.5rem 0;
+  }
+}

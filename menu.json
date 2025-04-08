@@ -187,6 +187,48 @@
 				"prices": { "16oz": 6.99 },
 				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_Apricot%26WallnutsOatsInAJar_2880x2304.jpg?alt=media&token=51ba740a-c5f4-4ff8-a291-b054d7a82f8a"
 			}
+		},
+		"iced coffee": {
+			"nuttyCocoa": {
+				"name": "Nutty Cocoa",
+				"description": "Chocolate + Hazelnut + Vanilla",
+				"prices": { "16oz": 4.49, "24oz": 5.49 }
+			},
+			"toffeeNutTwist": {
+				"name": "Toffee Nut Twist",
+				"description": "Caramel + Hazelnut",
+				"prices": { "16oz": 4.49, "24oz": 5.49 }
+			},
+			"caramelSeaBreeze": {
+				"name": "Caramel Sea Breeze",
+				"description": "Salted Caramel + Vanilla",
+				"prices": { "16oz": 4.49, "24oz": 5.49 }
+			},
+			"sweetChaiSurprise": {
+				"name": "Sweet Chai Surprise",
+				"description": "Chai + Caramel",
+				"prices": { "16oz": 4.49, "24oz": 5.49 }
+			},
+			"chaiCharm": {
+				"name": "Chai Charm",
+				"description": "Chai + Vanilla",
+				"prices": { "16oz": 4.49, "24oz": 5.49 }
+			},
+			"midnightMocha": {
+				"name": "Midnight Mocha",
+				"description": "Chocolate + Hazelnut",
+				"prices": { "16oz": 4.49, "24oz": 5.49 }
+			},
+			"vanillaDream": {
+				"name": "Vanilla Dream",
+				"description": "Caramel + Vanilla",
+				"prices": { "16oz": 4.49, "24oz": 5.49 }
+			},
+			"icedLatte": {
+				"name": "Iced Latte",
+				"description": "Classic Iced Coffee",
+				"prices": { "16oz": 4.49, "24oz": 5.49 }
+			}
 		}
 	},
 	"carousel" : {

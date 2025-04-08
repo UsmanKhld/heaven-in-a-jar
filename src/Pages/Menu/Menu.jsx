@@ -72,10 +72,10 @@ const Menu = () => {
           </div>
         )}
         <div className="menu-container">
-          <button className="clear-cart-btn" onClick={clearCart}>
+          {/* <button className="clear-cart-btn" onClick={clearCart}>
             Clear Cart
-          </button>
-          {["desserts", "shakes", "acai in a jar", "overnight oats"].map(
+          </button> */}
+          {["desserts", "shakes", "iced coffee", "acai in a jar", "overnight oats"].map(
             (category) =>
               menuData[category] && (
                 <div key={category} className="menu-category">
@@ -96,7 +96,7 @@ const Menu = () => {
                           )}
                           <h3 className="menu-item-title">{item.name}</h3>
                           <p className="menu-description">{item.description}</p>
-                          {category.toLowerCase() === "shakes" ? (
+                          {category.toLowerCase() === "shakes" || category.toLowerCase() === "iced coffee" ? (
                             <div>
                               <p className="menu-prices">
                                 16oz: ${item.prices?.["16oz"] || "N/A"} | 24oz:
