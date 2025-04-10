@@ -30,44 +30,12 @@ const Navbar = () => {
               Menu
             </a>
 
-            {/* Party Occasions Dropdown */}
-            <div className="relative group">
-              <button className="text-black hover:text-amber-900 transition duration-300">
-                Party Occasions
-              </button>
-              <div className="absolute hidden group-hover:block w-48 bg-white shadow-lg py-2 rounded-md">
-                <a
-                  href="/occasions/birthday"
-                  className="block px-4 py-2 hover:bg-[#E5D3B7]"
-                >
-                  Birthday
-                </a>
-                <a
-                  href="/occasions/holidays"
-                  className="block px-4 py-2 hover:bg-[#E5D3B7]"
-                >
-                  Holidays
-                </a>
-                <a
-                  href="/occasions/love"
-                  className="block px-4 py-2 hover:bg-[#E5D3B7]"
-                >
-                  Love
-                </a>
-                <a
-                  href="/occasions/thank-you"
-                  className="block px-4 py-2 hover:bg-[#E5D3B7]"
-                >
-                  Thank You
-                </a>
-                <a
-                  href="/occasions/christmas"
-                  className="block px-4 py-2 hover:bg-[#E5D3B7]"
-                >
-                  Christmas
-                </a>
-              </div>
-            </div>
+            <a
+              href="/occasions"
+              className="text-black hover:text-amber-900 transition duration-300"
+            >
+              Party Occasions
+            </a>
           </div>
 
           {/* Hamburger Menu Button (visible on mobile) */}

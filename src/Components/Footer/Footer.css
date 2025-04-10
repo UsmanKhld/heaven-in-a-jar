@@ -1,6 +1,6 @@
 .footer {
-  background-color: #FFEDD8;
-  color: #5D4037;
+  background-color: #583101;
+  color: #FFEDD8;
   padding: 2rem 0 0 0;
 }
 
@@ -19,8 +19,8 @@
 
 .footer-section h3 {
   font-size: 1.2rem;
+  font-weight: 600;
   margin-bottom: 1rem;
-  color: #8D6E63;
   font-family: "Poppins", sans-serif;
 }
 
@@ -32,18 +32,16 @@
 
 .social-links {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .social-link {
-  color: #5D4037;
-  text-decoration: none;
+  font-size: 1.5rem;
   transition: color 0.3s ease;
 }
 
 .social-link:hover {
-  color: #8D6E63;
+  color: #A47148;
 }
 
 .footer-bottom {
@@ -55,7 +53,6 @@
 
 .footer-bottom p {
   font-size: 0.8rem;
-  color: #7D6E83;
 }
 
 /* Responsive Design */

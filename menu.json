@@ -1,5 +1,19 @@
 {
 	"menuItems": {
+		"featured": {
+			"dubaiChocDelight": {
+				"name": "Dubai Chocolate Delight",
+				"description": "The classic Dubai Chocoate combination - Chocolate, Pistachio spread, and Kunefa. As well as our cheesecake and chocolate cake.",
+				"prices": { "8oz": 8.99 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FDubaiChocolateDelight.jpg?alt=media&token=92273c70-1629-4dd3-b11b-45b9a3acf0de"
+			},
+			"dubaiStrawberryCups": {
+				"name": "Dubai Strawberry Cup",
+				"description": "Strawberries in a cup with warm milk chocolate, pistachio spread, and kunefa",
+				"prices": { "16oz": 14.99 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fstrawberrycups%2FDubaiCup.jpg?alt=media&token=36ee7061-9bf6-44b9-aead-70126046d27c"
+			}
+		},
 		"desserts": {
 			"tiramisu": {
 				"name": "Tiramisu",
@@ -84,6 +98,12 @@
 				"description": "A creamy cheesecake packed with Snickers pieces and caramel drizzle.",
 				"prices": { "8oz": 7.26, "16oz": 9.34 },
 				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FSnickerCheesecake.webp?alt=media&token=61a1052b-8d03-454c-b740-95a64e847cb5"
+			},
+			"dubaiChocDelight": {
+				"name": "Dubai Chocolate Delight",
+				"description": "The classic Dubai Chocoate combination - Chocolate, Pistachio spread, and Kunefa. As well as our cheesecake and chocolate cake.",
+				"prices": { "8oz": 8.99 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FDubaiChocolateDelight.jpg?alt=media&token=92273c70-1629-4dd3-b11b-45b9a3acf0de"
 			}
 		},
 		"shakes": {
@@ -186,6 +206,20 @@
 				"description": "Our special soaked oatmeal, with banana greek yogurt, topped with banana chips",
 				"prices": { "16oz": 6.99 },
 				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_Apricot%26WallnutsOatsInAJar_2880x2304.jpg?alt=media&token=51ba740a-c5f4-4ff8-a291-b054d7a82f8a"
+			}
+		},
+		"strawberry cups": {
+			"strawberryChocCups": {
+				"name": "Strawberry & Chocolate Cup",
+				"description": "Strawberries in a cup with warm milk chocolate",
+				"prices": { "16oz": 6.99 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fstrawberrycups%2FHeavenInAJar_Strawberry%26Chocolate_2880x2304.jpg?alt=media&token=b00496a7-a8c6-4c57-b0d6-633dbb248a5e"
+			},
+			"dubaiStrawberryCups": {
+				"name": "Dubai Strawberry Cup",
+				"description": "Strawberries in a cup with warm milk chocolate, pistachio spread, and kunefa",
+				"prices": { "16oz": 14.99 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fstrawberrycups%2FDubaiCup.jpg?alt=media&token=36ee7061-9bf6-44b9-aead-70126046d27c"
 			}
 		},
 		"iced coffee": {
