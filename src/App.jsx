@@ -6,7 +6,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import { Home, Menu, Cart } from "./Pages/index";
+import { Home, Menu, Cart, Occasions } from "./Pages/index";
 import CheckoutSuccess from "./Pages/CheckoutSuccess/CheckoutSuccess";
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout/success" element={<CheckoutSuccess />} />
+          <Route path="/occasions" element={<Occasions />} />
         </Routes>
       </div>
     </Router>

@@ -34,7 +34,7 @@ const Navbar = () => {
               href="/occasions"
               className="text-black hover:text-amber-900 transition duration-300"
             >
-              Party Occasions
+              Gift Giving
             </a>
           </div>
 

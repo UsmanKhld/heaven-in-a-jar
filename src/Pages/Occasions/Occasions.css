@@ -1,0 +1,88 @@
+.occasions-container {
+  background-color: #FFEDD8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.occasions-content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px 0;
+}
+
+.giftbox-section {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.giftbox-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.options-section {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.giftbox-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.giftbox-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.options-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.options-section select,
+.options-section input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.options-section button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.options-section button:hover {
+  background-color: #0056b3;
+}
+
+.options-section h1 {
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+    font-size: 3rem;
+}
