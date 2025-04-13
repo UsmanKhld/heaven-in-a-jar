@@ -226,42 +226,50 @@
 			"nuttyCocoa": {
 				"name": "Nutty Cocoa",
 				"description": "Chocolate + Hazelnut + Vanilla",
-				"prices": { "16oz": 4.49, "24oz": 5.49 }
+				"prices": { "16oz": 4.49, "24oz": 5.49 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1"
 			},
 			"toffeeNutTwist": {
 				"name": "Toffee Nut Twist",
 				"description": "Caramel + Hazelnut",
-				"prices": { "16oz": 4.49, "24oz": 5.49 }
+				"prices": { "16oz": 4.49, "24oz": 5.49 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1"
 			},
 			"caramelSeaBreeze": {
 				"name": "Caramel Sea Breeze",
 				"description": "Salted Caramel + Vanilla",
-				"prices": { "16oz": 4.49, "24oz": 5.49 }
+				"prices": { "16oz": 4.49, "24oz": 5.49 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1"
 			},
 			"sweetChaiSurprise": {
 				"name": "Sweet Chai Surprise",
 				"description": "Chai + Caramel",
-				"prices": { "16oz": 4.49, "24oz": 5.49 }
+				"prices": { "16oz": 4.49, "24oz": 5.49 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1"
 			},
 			"chaiCharm": {
 				"name": "Chai Charm",
 				"description": "Chai + Vanilla",
-				"prices": { "16oz": 4.49, "24oz": 5.49 }
+				"prices": { "16oz": 4.49, "24oz": 5.49 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1"
 			},
 			"midnightMocha": {
 				"name": "Midnight Mocha",
 				"description": "Chocolate + Hazelnut",
-				"prices": { "16oz": 4.49, "24oz": 5.49 }
+				"prices": { "16oz": 4.49, "24oz": 5.49 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1"
 			},
 			"vanillaDream": {
 				"name": "Vanilla Dream",
 				"description": "Caramel + Vanilla",
-				"prices": { "16oz": 4.49, "24oz": 5.49 }
+				"prices": { "16oz": 4.49, "24oz": 5.49 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1"
 			},
 			"icedLatte": {
 				"name": "Iced Latte",
 				"description": "Classic Iced Coffee",
-				"prices": { "16oz": 4.49, "24oz": 5.49 }
+				"prices": { "16oz": 4.49, "24oz": 5.49 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1"
 			}
 		}
 	},

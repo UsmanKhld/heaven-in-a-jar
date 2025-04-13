@@ -1,21 +1,22 @@
-import React from 'react'
-import Navbar from '../../Components/Navbar/Navbar'
-import "./Occasions.css"
-import giftbox from "../../assets/gift-box.jpg"
-import giftbag from "../../assets/gift-bag.jpg"
+import React from "react";
+import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
+import "./Occasions.css";
+import giftbox from "../../assets/gift-box.jpg";
+import giftbag from "../../assets/gift-bag.jpg";
 
 const Occasions = () => {
   // State for Gift Box
   const [boxDesserts, setBoxDesserts] = React.useState(4); // Default to 4 desserts
-  const [boxPrice, setBoxPrice] = React.useState(4 * 7.49 + 2.50); // Initial price calculation
+  const [boxPrice, setBoxPrice] = React.useState(4 * 7.49 + 2.5); // Initial price calculation
 
   // State for Gift Bag
-  const [bagDesserts, setBagDesserts] = React.useState(4); // Default to 4 desserts
-  const [bagPrice, setBagPrice] = React.useState(4 * 7.49 + 2.50); // Initial price calculation
+  const [bagDesserts, setBagDesserts] = React.useState(2); // Default to 4 desserts
+  const [bagPrice, setBagPrice] = React.useState(2 * 7.49 + 1.5); // Initial price calculation
 
   const calculatePrice = (value) => {
     const dessertPrice = value * 7.49;
-    const extraCharge = value === 1 || value === 2 ? 1.50 : 2.50;
+    const extraCharge = value === 1 || value === 2 ? 1.5 : 2.5;
     return dessertPrice + extraCharge;
   };
 
@@ -41,7 +42,7 @@ const Occasions = () => {
           </div>
           <div className="options-section">
             <h1 className="giftbox-title">GIFT BOX</h1>
-            <p className="giftbox-description">There will be up to 5 desserts with a choice of occasions.</p>
+            <p className="giftbox-description">Pick up to</p>
             <h3>Select Occasion</h3>
             <select>
               <option>Birthday</option>
@@ -64,7 +65,9 @@ const Occasions = () => {
         <div className="occasions-content">
           <div className="options-section">
             <h1 className="giftbox-title">GIFT BAG</h1>
-            <p className="giftbox-description">There will be up to 5 desserts with a choice of occasions.</p>
+            <p className="giftbox-description">
+              There will be up to 5 desserts with a choice of occasions.
+            </p>
             <h3>Select Occasion</h3>
             <select>
               <option>Birthday</option>
@@ -75,7 +78,6 @@ const Occasions = () => {
             </select>
             <h3>Select Number of Desserts</h3>
             <select value={bagDesserts} onChange={handleBagDessertChange}>
-              <option value="1">1</option>
               <option value="2">2</option>
             </select>
             <button>Add to Cart - ${bagPrice.toFixed(2)}</button>
@@ -85,8 +87,9 @@ const Occasions = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Occasions
+export default Occasions;
