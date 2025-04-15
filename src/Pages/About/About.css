@@ -1,0 +1,179 @@
+.about-page {
+	min-height: 100vh;
+	background-color: #fff;
+}
+
+.about-hero {
+	height: 60vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("/src/assets/chalkboard.png");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-align: center;
+	padding: 2rem;
+}
+
+.about-logo {
+	width: 200px;
+	margin-bottom: 2rem;
+	animation: fadeIn 1s ease-in;
+}
+
+.about-hero h1 {
+	font-size: 3.5rem;
+	font-weight: 700;
+	margin: 0;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 4rem 2rem;
+}
+
+.about-section {
+	margin-bottom: 4rem;
+	opacity: 0;
+	transform: translateY(20px);
+	animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.about-section:nth-child(2) {
+	animation-delay: 0.2s;
+}
+
+.about-section:nth-child(3) {
+	animation-delay: 0.4s;
+}
+
+.section-content {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.section-content h2 {
+	font-size: 2.5rem;
+	color: #333;
+	margin-bottom: 1rem;
+	position: relative;
+	display: inline-block;
+}
+
+.section-content h2::after {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	width: 60px;
+	height: 4px;
+	background-color: #ff6b6b;
+}
+
+.section-content p {
+	font-size: 1.1rem;
+	line-height: 1.8;
+	color: #666;
+}
+
+.section-image {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+.section-image:hover {
+	transform: scale(1.02);
+}
+
+.values-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.value-card {
+	background: white;
+	padding: 2rem;
+	border-radius: 15px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+	transform: translateY(-5px);
+}
+
+.value-image {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+}
+
+.value-card h3 {
+	color: #333;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.value-card p {
+	color: #666;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media (max-width: 768px) {
+	.about-hero {
+		height: 50vh;
+	}
+
+	.about-hero h1 {
+		font-size: 2.5rem;
+	}
+
+	.about-logo {
+		width: 150px;
+	}
+
+	.section-content h2 {
+		font-size: 2rem;
+	}
+
+	.section-content p {
+		font-size: 1rem;
+	}
+}

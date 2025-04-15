@@ -3,69 +3,75 @@ import Navbar from "../../Components/Navbar/Navbar";
 import "./Cart.css";
 
 const Cart = () => {
-  const [cartItems, setCartItems] = useState([]);
-  const [totalPrice, setTotalPrice] = useState(0);
-  const [isProcessing, setIsProcessing] = useState(false);
+	const [cartItems, setCartItems] = useState([]);
+	const [totalPrice, setTotalPrice] = useState(0);
+	const [isProcessing, setIsProcessing] = useState(false);
 
-  useEffect(() => {
-    // Load cart items from localStorage
-    const savedCart = localStorage.getItem("cart");
-    if (savedCart) {
-      const parsedCart = JSON.parse(savedCart);
-      setCartItems(parsedCart);
+	useEffect(() => {
+		// Load cart items from localStorage
+		const savedCart = localStorage.getItem("cart");
+		if (savedCart) {
+			const parsedCart = JSON.parse(savedCart);
+			setCartItems(parsedCart);
 
-      // Calculate total price
-      const total = parsedCart.reduce((sum, item) => sum + item.price, 0);
-      setTotalPrice(total);
-    }
-  }, []);
+			// Calculate total price
+			const total = parsedCart.reduce((sum, item) => sum + item.price, 0);
+			setTotalPrice(total);
+		}
+	}, []);
 
-  const removeFromCart = (itemId) => {
-    const updatedCart = cartItems.filter((item) => item.id !== itemId);
-    setCartItems(updatedCart);
+	const removeFromCart = (itemId) => {
+		const updatedCart = cartItems.filter((item) => item.id !== itemId);
+		setCartItems(updatedCart);
 
-    // Update localStorage
-    localStorage.setItem("cart", JSON.stringify(updatedCart));
+		// Update localStorage
+		localStorage.setItem("cart", JSON.stringify(updatedCart));
 
-    // Recalculate total
-    const total = updatedCart.reduce((sum, item) => sum + item.price, 0);
-    setTotalPrice(total);
-  };
+		// Recalculate total
+		const total = updatedCart.reduce((sum, item) => sum + item.price, 0);
+		setTotalPrice(total);
+	};
 
-  const clearCart = () => {
-    setCartItems([]);
-    setTotalPrice(0);
-    localStorage.removeItem("cart");
-  };
+	const clearCart = () => {
+		setCartItems([]);
+		setTotalPrice(0);
+		localStorage.removeItem("cart");
+	};
 
-  const handleCheckout = async () => {
-    setIsProcessing(true);
-    try {
-      // Replace with your actual function URL
-      const response = await fetch('https://us-central1-heaven-in-a-jar.cloudfunctions.net/createCheckoutSession', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          items: cartItems,
-        }),
-      });
-      
-      const { url } = await response.json();
-      
-      // Redirect to Stripe Checkout
-      window.location.href = url;
-    } catch (error) {
-      console.error('Error redirecting to checkout:', error);
-      setIsProcessing(false);
-    }
-  };
+	const handleCheckout = async () => {
+		setIsProcessing(true);
+		try {
+			// Replace with your actual function URL
+			const response = await fetch(
+				"https://us-central1-heaven-in-a-jar.cloudfunctions.net/createCheckoutSession",
+				{
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify({
+						items: cartItems,
+					}),
+				}
+			);
 
-  return (
-    <div className="cart-page">
-      <Navbar />
-      <div className="cart-container">
+			const { url } = await response.json();
+
+			// Redirect to Stripe Checkout
+			window.location.href = url;
+		} catch (error) {
+			console.error("Error redirecting to checkout:", error);
+			setIsProcessing(false);
+		}
+	};
+
+	return (
+		<div className="cart-page">
+			<Navbar />
+			<div className="text-white flex justify-center mt-10">
+				Online ordering will be available soon, stay tuned!
+			</div>
+			{/* <div className="cart-container">
         <h1 className="cart-title">Your Cart</h1>
         {cartItems.length === 0 ? (
           <div className="empty-cart">
@@ -116,9 +122,9 @@ const Cart = () => {
             </div>
           </>
         )}
-      </div>
-    </div>
-  );
+      </div> */}
+		</div>
+	);
 };
 
 export default Cart;
