@@ -1,0 +1,130 @@
+.catering-page {
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.catering-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/catering/tray.jpg") center/cover;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.catering-hero h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  font-family: "Dancing Script", cursive;
+
+}
+
+.catering-hero p {
+  font-size: 1.5rem;
+  max-width: 600px;
+}
+
+.catering-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.catering-section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section-content h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.section-content p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.section-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.section-image:hover {
+  transform: scale(1.02);
+}
+
+.catering-contact {
+  text-align: center;
+  padding: 3rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.catering-contact h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.catering-contact p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.contact-button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #ff5252;
+}
+
+@media (max-width: 768px) {
+  .catering-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .catering-hero p {
+    font-size: 1.2rem;
+  }
+
+  .section-content h2 {
+    font-size: 2rem;
+  }
+
+  .catering-section {
+    padding: 1.5rem;
+  }
+}

@@ -61,7 +61,7 @@
   background-size: 120%; /* Ensures the image covers the entire modal */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents tiling */
-  font-family: "Fredericka the Great", cursive;
+  /* font-family: "Fredericka the Great", cursive; */
   color: white;
   margin: 0 auto;
   border-radius: 10px;
