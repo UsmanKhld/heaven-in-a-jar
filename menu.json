@@ -5,105 +5,129 @@
 				"name": "Dubai Chocolate Delight",
 				"description": "The classic Dubai Chocoate combination - Chocolate, Pistachio spread, and Kunefa. As well as our cheesecake and chocolate cake.",
 				"prices": { "8oz": 8.99 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FDubaiChocolateDelight.jpg?alt=media&token=92273c70-1629-4dd3-b11b-45b9a3acf0de"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FDubaiChocDelight.png?alt=media&token=20c88515-6c91-41ed-9378-65dcf73e3dbb",
+				"isAvailable": true
 			},
 			"dubaiStrawberryCups": {
 				"name": "Dubai Strawberry Cup",
 				"description": "Strawberries in a cup with warm milk chocolate, pistachio spread, and kunefa",
 				"prices": { "16oz": 14.99 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fstrawberrycups%2FDubaiCup.jpg?alt=media&token=36ee7061-9bf6-44b9-aead-70126046d27c"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fstrawberrycups%2FDubaiCup.jpg?alt=media&token=36ee7061-9bf6-44b9-aead-70126046d27c",
+				"isAvailable": true
 			}
 		},
 		"desserts": {
+			"cookiesnreeses": {
+				"name": "Cookies 'n Reese's",
+				"description": "A blend of two favorites, Oreos and Reeses, with a creamy chocolate mousse.",
+				"prices": { "8oz": 7.49, "16oz": 9.49 },
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FCookiesnReeses.png?alt=media&token=1f7fc92b-0085-4fc5-b98d-a2ea837fa75b",
+				"isAvailable": true
+			},
 			"tiramisu": {
 				"name": "Tiramisu",
 				"description": "A classic Italian dessert with layers of espresso-soaked ladyfingers and creamy mascarpone.",
 				"prices": { "8oz": 7.49, "16oz": 9.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FTiramisu.webp?alt=media&token=09867535-ad39-4d98-b041-94b078076ce3"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FTiramisu.png?alt=media&token=f725b457-cda0-4aa6-bc38-b7d4a45f26bf",
+				"isAvailable": true
 			},
 			"keylimePie": {
 				"name": "Keylime Pie",
 				"description": "A zesty, tangy pie with a graham cracker crust and refreshing lime filling.",
 				"prices": { "8oz": 7.49, "16oz": 9.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FKeylimePie.webp?alt=media&token=9cfc2090-4eb8-4ff1-898c-9946425f3b38"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FKeylimePie.png?alt=media&token=cfcd8219-78ba-4d0c-bb27-76db4fd26350",
+				"isAvailable": true
 			},
 			"kinderKreme": {
 				"name": "Kinder Kreme",
 				"description": "A rich and creamy dessert inspired by the beloved Kinder chocolate.",
 				"prices": { "8oz": 7.49, "16oz": 9.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FKinderKreme.webp?alt=media&token=6aaf64b4-e0ac-4dfd-b7ad-45f61d9afdab"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FKinderKreme.webp?alt=media&token=6aaf64b4-e0ac-4dfd-b7ad-45f61d9afdab",
+				"isAvailable": true
 			},
 			"strawberryCheesecake": {
 				"name": "Strawberry Cheesecake",
 				"description": "A smooth cheesecake topped with a luscious strawberry glaze.",
 				"prices": { "8oz": 7.49, "16oz": 9.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FStrawberryCheesecake.webp?alt=media&token=119502b1-7c7b-4a8c-81ed-560178faffdb"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FStrawberryCheesecake.png?alt=media&token=6f1cba2a-1772-46b6-9f19-a61b5d4c8527",
+				"isAvailable": true
 			},
 			"biscuitCake": {
 				"name": "Biscuit Cake",
 				"description": "A delightful combination of biscuits layered with chocolate and cream.",
 				"prices": { "8oz": 7.49, "16oz": 9.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FBiscuitCake.webp?alt=media&token=5ccaedd4-3718-4591-b375-1417940a3162"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FBiscuitCake.png?alt=media&token=e3546260-cc3f-4156-b3a8-6b03e9b85d22",
+				"isAvailable": true
 			},
 			"espressoCheesecake": {
 				"name": "Espresso Cheesecake",
 				"description": "A bold, coffee-infused cheesecake with a smooth and creamy texture.",
 				"prices": { "8oz": 7.49, "16oz": 9.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FEspressoCheesecake.webp?alt=media&token=662f4be9-c267-4efc-ac44-e44178a4bda8"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FEspressoCheesecake.png?alt=media&token=a54be90d-3bd8-425d-80ed-9aff1e2fb415",
+				"isAvailable": true
 			},
 			"oreoCheesecake": {
 				"name": "Oreo Cheesecake",
 				"description": "A decadent cheesecake with layers of crushed Oreo cookies.",
 				"prices": { "8oz": 7.49, "16oz": 9.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FOreoCheesecake.webp?alt=media&token=f715327a-9bda-4c46-a0c1-759013bfd1f6"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FOreoCheesecake.png?alt=media&token=8e18f323-8136-423d-96bf-c257daf774d0",
+				"isAvailable": true
 			},
 			"bananaPudding": {
 				"name": "Banana Pudding",
 				"description": "A creamy and nostalgic dessert filled with layers of banana and vanilla wafers.",
 				"prices": { "8oz": 7.49, "16oz": 9.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FBananaPudding.webp?alt=media&token=12abd655-c915-458e-9f2e-28c2685e88c5"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FBananaPudding.png?alt=media&token=e179cdcc-170c-4060-a071-1020ccf7deb2",
+				"isAvailable": true
 			},
 			"smores": {
 				"name": "S'mores",
 				"description": "A gooey treat with layers of marshmallow, chocolate, and graham crackers.",
 				"prices": { "8oz": 7.49, "16oz": 9.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FSmoreswithBiscoff.webp?alt=media&token=e2e3c7f9-12a0-4cf3-a848-fd1c9ae0dc18"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FSmores.png?alt=media&token=29339a16-7ab8-47e5-8cd7-4a7a74e4bcec",
+				"isAvailable": true
 			},
 			"redVelvet": {
 				"name": "Red Velvet",
 				"description": "A velvety smooth dessert with hints of cocoa and cream cheese frosting.",
 				"prices": { "8oz": 7.49, "16oz": 9.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FRedVelvet.webp?alt=media&token=a2915776-33c5-43e3-87fb-501941e3f57b"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FRedVelvet.png?alt=media&token=4cb62fc2-a506-407e-85b2-e536a1648081",
+				"isAvailable": true
 			},
 			"brownieDelight": {
 				"name": "Brownie Delight",
 				"description": "A rich and fudgy brownie dessert topped with chocolate sauce.",
 				"prices": { "8oz": 7.49, "16oz": 9.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FBrownieDelight.webp?alt=media&token=90be4b3e-64a7-491c-9c1d-796ca9713f9c"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FBrownieDelight.png?alt=media&token=566817cf-bc26-4cdf-9063-fa44825ac6e9",
+				"isAvailable": true
 			},
 			"tresLeches": {
 				"name": "Tres Leches",
 				"description": "A moist sponge cake soaked in three types of milk and topped with whipped cream.",
 				"prices": { "8oz": 7.49, "16oz": 9.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FTresLeches.webp?alt=media&token=75a518ef-0e44-46a1-a6cf-0ed184465a50"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FTres%20Leches.png?alt=media&token=7e9e4cf6-72d4-4916-88bb-73b7b7e6d29e",
+				"isAvailable": true
 			},
 			"tresLechesChocolate": {
 				"name": "Tres Leches Chocolate",
 				"description": "A chocolate twist on the classic tres leches cake with rich cocoa flavor.",
 				"prices": { "8oz": 7.49, "16oz": 9.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FChocolateTresLeches.webp?alt=media&token=57c2cd24-636a-4db2-9101-224e9b296232"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FTresLechesChocolate.png?alt=media&token=319b08df-3ed2-4a40-8780-03d6a81fc6cb",
+				"isAvailable": true
 			},
 			"snickerCheesecake": {
 				"name": "Snicker Cheesecake",
 				"description": "A creamy cheesecake packed with Snickers pieces and caramel drizzle.",
 				"prices": { "8oz": 7.49, "16oz": 9.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FSnickerCheesecake.webp?alt=media&token=61a1052b-8d03-454c-b740-95a64e847cb5"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FSnickerCheesecake.png?alt=media&token=f870e82c-098d-43f0-8fec-aec1319a9fe7",
+				"isAvailable": true
 			},
 			"dubaiChocDelight": {
 				"name": "Dubai Chocolate Delight",
 				"description": "The classic Dubai Chocoate combination - Chocolate, Pistachio spread, and Kunefa. As well as our cheesecake and chocolate cake.",
 				"prices": { "8oz": 8.99 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FDubaiChocolateDelight.jpg?alt=media&token=92273c70-1629-4dd3-b11b-45b9a3acf0de"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FDubaiChocDelight.png?alt=media&token=20c88515-6c91-41ed-9378-65dcf73e3dbb",
+				"isAvailable": true
 			}
 		},
 		"shakes": {
@@ -111,55 +135,64 @@
 				"name": "Lotus Ice Cream Shake",
 				"description": "A creamy shake blended with the unique flavor of Lotus biscuits.",
 				"prices": { "16oz": 7.49, "24oz": 8.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FLotusIceCreamShake.webp?alt=media&token=f43a409a-c9c8-4234-9f7b-dc4cae84bee1"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FLotusIceCreamShake.webp?alt=media&token=f43a409a-c9c8-4234-9f7b-dc4cae84bee1",
+				"isAvailable": true
 			},
 			"oreoIceCreamShake": {
 				"name": "Oreo Ice Cream Shake",
 				"description": "A thick and indulgent shake filled with crushed Oreo cookies.",
 				"prices": { "16oz": 7.49, "24oz": 8.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FOreoIceCreamShake.webp?alt=media&token=c5fe59c3-9bb1-44bb-a0b3-979574f91f63"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FOreoIceCreamShake.webp?alt=media&token=c5fe59c3-9bb1-44bb-a0b3-979574f91f63",
+				"isAvailable": true
 			},
 			"brownieIceCreamShake": {
 				"name": "Brownie Ice Cream Shake",
 				"description": "A decadent shake featuring chunks of rich brownie blended with ice cream.",
 				"prices": { "16oz": 7.49, "24oz": 8.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FBrownieIceCreamShake.webp?alt=media&token=d259d86e-140f-4650-b8af-48ddb22bbbe1"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FBrownieIceCreamShake.webp?alt=media&token=d259d86e-140f-4650-b8af-48ddb22bbbe1",
+				"isAvailable": true
 			},
 			"strawberryIceCreamShake": {
 				"name": "Strawberry Ice Cream Shake",
 				"description": "A refreshing shake with the vibrant flavor of fresh strawberries.",
 				"prices": { "16oz": 7.49, "24oz": 8.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FStrawberryIceCreamShake.webp?alt=media&token=36e2919a-d27f-48c6-9dec-49ee7d050cdf"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FStrawberryIceCreamShake.webp?alt=media&token=36e2919a-d27f-48c6-9dec-49ee7d050cdf",
+				"isAvailable": true
 			},
 			"mochaIceCreamShake": {
 				"name": "Mocha Ice Cream Shake",
 				"description": "A delightful blend of chocolate and coffee flavors in a creamy shake.",
 				"prices": { "16oz": 7.49, "24oz": 8.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FMochaIceCreamShake.webp?alt=media&token=8b58a418-9d14-47f9-abff-03ef1c5bdf99"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FMochaIceCreamShake.webp?alt=media&token=8b58a418-9d14-47f9-abff-03ef1c5bdf99",
+				"isAvailable": true
 			},
 			"banoffeeIceCreamShake": {
 				"name": "Banoffee Ice Cream Shake",
 				"description": "A sweet and creamy shake inspired by the classic banana-toffee dessert.",
 				"prices": { "16oz": 7.49, "24oz": 8.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FBanoffeeIceCreamShake.webp?alt=media&token=f7605443-6c77-42f7-9d0c-4ff87c16d3f1"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FBanoffeeIceCreamShake.webp?alt=media&token=f7605443-6c77-42f7-9d0c-4ff87c16d3f1",
+				"isAvailable": true
 			},
 			"kitKatIceCreamShake": {
 				"name": "Kit-Kat Ice Cream Shake",
 				"description": "A crunchy, chocolatey shake featuring pieces of Kit-Kat bars.",
 				"prices": { "16oz": 7.49, "24oz": 8.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FKitKatIceCreamShake.webp?alt=media&token=ef5637b2-0fc8-457a-8e9c-8d7bedb96534"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FKitKatIceCreamShake.webp?alt=media&token=ef5637b2-0fc8-457a-8e9c-8d7bedb96534",
+				"isAvailable": true
 			},
 			"mAndMCookieDoughIceCreamShake": {
 				"name": "M&M Cookie Dough Ice Cream Shake",
 				"description": "A colorful, fun shake packed with M&M candies and cookie dough.",
 				"prices": { "16oz": 7.49, "24oz": 8.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FMnMIceCreamShake.webp?alt=media&token=fe891a1e-9ca2-45d9-946e-f65822abeebe"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FMnMIceCreamShake.webp?alt=media&token=fe891a1e-9ca2-45d9-946e-f65822abeebe",
+				"isAvailable": true
 			},
 			"reesesIceCreamShake": {
 				"name": "Reese's Ice Cream Shake",
 				"description": "A peanut buttery delight featuring Reese's cups blended into a creamy shake.",
 				"prices": { "16oz": 7.49, "24oz": 8.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FReesesIcecreamShake.webp?alt=media&token=4f402135-10c8-4732-8942-73f1d5ced21b"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fshakes%2FReesesIcecreamShake.webp?alt=media&token=4f402135-10c8-4732-8942-73f1d5ced21b",
+				"isAvailable": true
 			}
 		},
 		"acai in a jar": {
@@ -167,7 +200,8 @@
 				"name": "Acai in a Jar",
 				"description": "Smooth blend of acai, strawberries, blueberries, and banana with 3 options for toppings",
 				"prices": { "16oz": 8.99 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Facai%2FAcai%20in%20a%20Jar.jpeg?alt=media&token=b93f9d4f-15dc-4e61-a18f-80f8e66ccb27"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Facai%2FAcai%20in%20a%20Jar.jpeg?alt=media&token=b93f9d4f-15dc-4e61-a18f-80f8e66ccb27",
+				"isAvailable": true
 			}
 		},
 		"overnight oats": {
@@ -175,37 +209,43 @@
 				"name": "Raspberry Oats",
 				"description": "Our special soaked oatmeal, with strawberry greek yogurt, topped with raspberries",
 				"prices": { "16oz": 6.99 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_RaspberryOatsInAJar_2880x2304.jpg?alt=media&token=ae4bc160-cf21-4cdd-b07a-a10caa0083ff"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_RaspberryOatsInAJar_2880x2304.jpg?alt=media&token=ae4bc160-cf21-4cdd-b07a-a10caa0083ff",
+				"isAvailable": true
 			},
 			"strawberryOats": {
 				"name": "Strawberry Oats",
 				"description": "Our special soaked oatmeal, with strawberry greek yogurt, topped with strawberries",
 				"prices": { "16oz": 6.99 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_StrawberryOatsInAJar_2880x2304.jpg?alt=media&token=27076658-ba93-47c7-ba58-39fde125eef0"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_StrawberryOatsInAJar_2880x2304.jpg?alt=media&token=27076658-ba93-47c7-ba58-39fde125eef0",
+				"isAvailable": true
 			},
 			"apricotWalnutOats": {
 				"name": "Apricot Walnut Oats",
 				"description": "Our special soaked oatmeal, with peach greek yogurt, topped with dried apricots and walnuts",
 				"prices": { "16oz": 6.99 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_Apricot%26WallnutsOatsInAJar_2880x2304.jpg?alt=media&token=51ba740a-c5f4-4ff8-a291-b054d7a82f8a"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_Apricot%26WallnutsOatsInAJar_2880x2304.jpg?alt=media&token=51ba740a-c5f4-4ff8-a291-b054d7a82f8a",
+				"isAvailable": true
 			},
 			"blueberryOats": {
 				"name": "Blueberry Oats",
 				"description": "Our special soaked oatmeal, with blueberry greek yogurt, topped with blueberries",
 				"prices": { "16oz": 6.99 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_BlackberryOatsInAJar_2880x2304.jpg?alt=media&token=56182b58-2488-48f1-9614-3d13fd2e4237"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_BlackberryOatsInAJar_2880x2304.jpg?alt=media&token=56182b58-2488-48f1-9614-3d13fd2e4237",
+				"isAvailable": true
 			},
 			"blackberryOats": {
 				"name": "Blackberry Oats",
 				"description": "Our special soaked oatmeal, with blueberry greek yogurt, topped with blackberries",
 				"prices": { "16oz": 6.99 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_BlackberryOatsInAJar_2880x2304.jpg?alt=media&token=56182b58-2488-48f1-9614-3d13fd2e4237"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_BlackberryOatsInAJar_2880x2304.jpg?alt=media&token=56182b58-2488-48f1-9614-3d13fd2e4237",
+				"isAvailable": true
 			},
 			"bananaOats": {
 				"name": "Banana Oats",
 				"description": "Our special soaked oatmeal, with banana greek yogurt, topped with banana chips",
 				"prices": { "16oz": 6.99 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_Apricot%26WallnutsOatsInAJar_2880x2304.jpg?alt=media&token=51ba740a-c5f4-4ff8-a291-b054d7a82f8a"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Foats%2FHeavenInAJar_Apricot%26WallnutsOatsInAJar_2880x2304.jpg?alt=media&token=51ba740a-c5f4-4ff8-a291-b054d7a82f8a",
+				"isAvailable": true
 			}
 		},
 		"strawberry cups": {
@@ -213,13 +253,15 @@
 				"name": "Strawberry & Chocolate Cup",
 				"description": "Strawberries in a cup with warm milk chocolate",
 				"prices": { "16oz": 6.99 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fstrawberrycups%2FHeavenInAJar_Strawberry%26Chocolate_2880x2304.jpg?alt=media&token=b00496a7-a8c6-4c57-b0d6-633dbb248a5e"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fstrawberrycups%2FHeavenInAJar_Strawberry%26Chocolate_2880x2304.jpg?alt=media&token=b00496a7-a8c6-4c57-b0d6-633dbb248a5e",
+				"isAvailable": true
 			},
 			"dubaiStrawberryCups": {
 				"name": "Dubai Strawberry Cup",
 				"description": "Strawberries in a cup with warm milk chocolate, pistachio spread, and kunefa",
 				"prices": { "16oz": 14.99 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fstrawberrycups%2FDubaiCup.jpg?alt=media&token=36ee7061-9bf6-44b9-aead-70126046d27c"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fstrawberrycups%2FDubaiCup.jpg?alt=media&token=36ee7061-9bf6-44b9-aead-70126046d27c",
+				"isAvailable": true
 			}
 		},
 		"iced coffee": {
@@ -227,49 +269,57 @@
 				"name": "Nutty Cocoa",
 				"description": "Chocolate + Hazelnut + Vanilla",
 				"prices": { "16oz": 4.49, "24oz": 5.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1",
+				"isAvailable": true
 			},
 			"toffeeNutTwist": {
 				"name": "Toffee Nut Twist",
 				"description": "Caramel + Hazelnut",
 				"prices": { "16oz": 4.49, "24oz": 5.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1",
+				"isAvailable": true
 			},
 			"caramelSeaBreeze": {
 				"name": "Caramel Sea Breeze",
 				"description": "Salted Caramel + Vanilla",
 				"prices": { "16oz": 4.49, "24oz": 5.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1",
+				"isAvailable": true
 			},
 			"sweetChaiSurprise": {
 				"name": "Sweet Chai Surprise",
 				"description": "Chai + Caramel",
 				"prices": { "16oz": 4.49, "24oz": 5.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1",
+				"isAvailable": true
 			},
 			"chaiCharm": {
 				"name": "Chai Charm",
 				"description": "Chai + Vanilla",
 				"prices": { "16oz": 4.49, "24oz": 5.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1",
+				"isAvailable": true
 			},
 			"midnightMocha": {
 				"name": "Midnight Mocha",
 				"description": "Chocolate + Hazelnut",
 				"prices": { "16oz": 4.49, "24oz": 5.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1",
+				"isAvailable": true
 			},
 			"vanillaDream": {
 				"name": "Vanilla Dream",
 				"description": "Caramel + Vanilla",
 				"prices": { "16oz": 4.49, "24oz": 5.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1",
+				"isAvailable": true
 			},
 			"icedLatte": {
 				"name": "Iced Latte",
 				"description": "Classic Iced Coffee",
 				"prices": { "16oz": 4.49, "24oz": 5.49 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1"
+				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Ficed-coffee%2FVanilla%20Iced%20Coffee.jpeg?alt=media&token=dde07764-2a2a-486b-8f76-2e80c611fbb1",
+				"isAvailable": true
 			}
 		}
 	},
