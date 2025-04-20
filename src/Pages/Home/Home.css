@@ -65,7 +65,7 @@
   }
 
   .desserts_title {
-    font-size: 5rem; /* Adjust title size for mobile */
+    font-size: 4rem; /* Adjust title size for mobile */
     margin-bottom: 1rem; /* Add some space below the title */
     text-align: center; /* Center the title */
     font-family: "Dancing Script", cursive;
@@ -79,7 +79,7 @@
 
   .dessert {
     max-width: 100%; /* Allow images to fill the grid cell width */
-    width: 150px; /* Set a fixed width for consistent sizing */
+    width: 130px; /* Set a fixed width for consistent sizing */
     height: auto;
     margin: 0 auto; /* Center the images in their cells */
   }
