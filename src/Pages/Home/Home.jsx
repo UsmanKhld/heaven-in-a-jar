@@ -121,6 +121,9 @@ const Home = () => {
         <Spotlight />
         {/* <Carousel /> */}
         <div className="home-hero">
+          <div className="desserts_title md:hidden flex justify-center items-center">
+            Our Desserts
+          </div>
           <div className="w-full h-full flex justify-center items-end">
             <div className="shelf">
               {images.map((dessert, index) => (

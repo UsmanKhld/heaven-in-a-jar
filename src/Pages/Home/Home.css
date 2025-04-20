@@ -15,7 +15,12 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Always 4 columns */
   grid-template-rows: repeat(3, 1fr); /* Always 3 rows */
-  gap: 1rem; /* Spacing between grid items */
+  gap: 1rem 0.5rem; /* Row gap 1rem, column gap 0.5rem */
+  position: relative;
+}
+
+.shelf > div:hover {
+  z-index: 2; /* Bring hovered item above others */
 }
 
 .dessert {
@@ -23,6 +28,7 @@
   max-width: 60%; /* Restrict maximum size */
   height: 85%;
   transition: transform 0.3s ease, z-index 0.3s ease; /* Smooth transition */
+  transform-origin: bottom center; /* Scale from bottom center */
 }
 
 /* Media Queries for Shrinking Images */
@@ -33,27 +39,56 @@
   }
 
   .dessert {
-    max-width: 8rem; /* Shrink image size */
+    max-width: 60%; /* Shrink image size */
   }
 }
 
+/* Media query for mobile screens */
 @media (max-width: 768px) {
+  .home-hero {
+    background: #F3D5B5; /* Rich brown color */
+    background-image: none;
+    aspect-ratio: auto; /* Remove fixed aspect ratio */
+    min-height: 1200px; /* Give enough space for all rows */
+    height: auto; /* Allow height to expand */
+    padding: 2rem 0; /* Add some padding top and bottom */
+  }
+
   .shelf {
-    grid-template-columns: repeat(4, 1fr); /* Keep 4 columns */
+    width: 90%; /* Wider shelf for better mobile view */
+    height: auto; /* Allow height to expand */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns instead of 4 */
+    grid-template-rows: repeat(6, auto); /* Make rows auto-sized */
+    gap: 2rem 1rem; /* Larger row gap for mobile */
+    margin: 0 auto; /* Center the shelf */
+    padding: 2rem 0; /* Add padding to the shelf */
+  }
+
+  .desserts_title {
+    font-size: 5rem; /* Adjust title size for mobile */
+    margin-bottom: 1rem; /* Add some space below the title */
+    text-align: center; /* Center the title */
+    font-family: "Dancing Script", cursive;
+  }
+
+  /* Adjust grid lines for 2-column layout */
+  .shelf > div {
+    border-bottom: 5px solid #4a3425;
+    padding-bottom: 2rem;
   }
 
   .dessert {
-    max-width: 6rem; /* Shrink image size further */
-  }
-}
-
-@media (max-width: 480px) {
-  .shelf {
-    grid-template-columns: repeat(4, 1fr); /* Keep 4 columns */
+    max-width: 100%; /* Allow images to fill the grid cell width */
+    width: 150px; /* Set a fixed width for consistent sizing */
+    height: auto;
+    margin: 0 auto; /* Center the images in their cells */
   }
 
-  .dessert {
-    max-width: 4rem; /* Smallest image size */
+  .modal {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    /* transform: translate(0%, -50%) !important; */
   }
 }
 

@@ -16,7 +16,6 @@
 }
 
 .giftbox-section {
-
   text-align: center;
   padding: 20px;
 }
@@ -82,7 +81,46 @@
 }
 
 .options-section h1 {
-    font-family: "Dancing Script", cursive;
-    font-weight: bold;
-    font-size: 3rem;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  .occasions-content {
+    flex-direction: column;
+    width: 95%;
+    margin: 10px 0;
+  }
+
+  .occasions-content:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .giftbox-section {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .giftbox-image {
+    max-width: 250px;
+  }
+
+  .options-section {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .options-section h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .giftbox-description {
+    text-align: center;
+  }
+
+  .options-section button {
+    margin-bottom: 20px;
+  }
 }

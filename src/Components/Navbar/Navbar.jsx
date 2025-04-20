@@ -104,7 +104,7 @@ const Navbar = () => {
               href="/occasions"
               className="block px-4 py-2 text-brown-800 hover:bg-[#d3c1a5]"
             >
-              Part Occasions
+              Gift Giving
             </a>
 
             <a
