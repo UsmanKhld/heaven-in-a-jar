@@ -97,6 +97,8 @@ const Menu = () => {
 									<div className="menu-items">
 										{Object.keys(menuData[category] || {}).map((itemKey) => {
 											const item = menuData[category][itemKey];
+											// Only render if item is available
+											if (!item.isAvailable) return null;
 											return (
 												<div key={itemKey} className="menu-card">
 													{item.imageUrl && (

@@ -16,6 +16,9 @@ import {
 	Careers,
 } from "./Pages/index";
 import CheckoutSuccess from "./Pages/CheckoutSuccess/CheckoutSuccess";
+import AdminLogin from "./Pages/AdminLogin";
+import AdminDashboard from "./Pages/AdminDashboard";
+import PrivateRoute from "./Pages/PrivateRoute";
 
 function App() {
 	return (
@@ -30,6 +33,15 @@ function App() {
 					<Route path="/catering" element={<Catering />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/careers" element={<Careers />} />
+					<Route path="/admin" element={<AdminLogin />} />
+					<Route
+						path="/admin/dashboard"
+						element={
+							<PrivateRoute>
+								<AdminDashboard />
+							</PrivateRoute>
+						}
+					/>
 				</Routes>
 			</div>
 		</Router>

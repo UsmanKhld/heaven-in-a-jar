@@ -43,7 +43,7 @@
 				"description": "A rich and creamy dessert inspired by the beloved Kinder chocolate.",
 				"prices": { "8oz": 7.49, "16oz": 9.49 },
 				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FKinderKreme.webp?alt=media&token=6aaf64b4-e0ac-4dfd-b7ad-45f61d9afdab",
-				"isAvailable": true
+				"isAvailable": false
 			},
 			"strawberryCheesecake": {
 				"name": "Strawberry Cheesecake",
