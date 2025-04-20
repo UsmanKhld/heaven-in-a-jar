@@ -19,8 +19,9 @@
 }
 
 .dessert {
-  width: 60%; /* Take up full width of grid cell */
-  max-width: 10rem; /* Restrict maximum size */
+   /* Take up full width of grid cell */
+  max-width: 60%; /* Restrict maximum size */
+  height: 85%;
   transition: transform 0.3s ease, z-index 0.3s ease; /* Smooth transition */
 }
 

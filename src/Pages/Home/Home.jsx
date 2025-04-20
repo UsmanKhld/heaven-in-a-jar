@@ -6,7 +6,7 @@ import StoreMap from "../../Components/StoreMap/StoreMap";
 import Spotlight from "../../Components/Spotlight/Spotlight";
 import Footer from "../../Components/Footer/Footer";
 import "./Home.css";
-import bisCake from "../../assets/desserts/biscuit-cake.png";
+import bisCake from "../../assets/desserts/BiscuitCake_optimized.png";
 import Banana from "../../assets/desserts/Banana Pudding.png";
 import Brownie from "../../assets/desserts/Brownie Delight.png";
 import Espresso from "../../assets/desserts/Espresso Cheesecake.png";
@@ -17,6 +17,7 @@ import Snicker from "../../assets/desserts/Snickers Cheesecake.png";
 import Strawberry from "../../assets/desserts/Strawberry Cheesecake.png";
 import Tiramisu from "../../assets/desserts/Tiramisu.png";
 import Tres from "../../assets/desserts/Tres Leches.png";
+import Smores from "../../assets/desserts/Smores.png";
 
 const Home = () => {
   const images = [
@@ -81,6 +82,12 @@ const Home = () => {
     {
       src: Tres,
       alt: "Tres Leches",
+      description:
+        "Moist, sweet, and absolutely delicious Tres Leches cake with caramel and a topping of whipped cream.",
+    },
+    {
+      src: Smores,
+      alt: "Smores",
       description:
         "Moist, sweet, and absolutely delicious Tres Leches cake with caramel and a topping of whipped cream.",
     },
