@@ -2,6 +2,9 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import "./About.css";
 import hiajLogo from "../../assets/hiaj-logo.png";
+import store from "../../assets/Store.jpg";
+import giftBox from "../../assets/gift-box.jpg";
+import giftBag from "../../assets/gift-bag.jpg";
 
 const About = () => {
   return (
@@ -24,11 +27,7 @@ const About = () => {
               has grown into a beloved destination for sweet treats that bring
               joy to every occasion.
             </p>
-            <img
-              src="/src/assets/Store.jpg"
-              alt="Our Store"
-              className="section-image"
-            />
+            <img src={store} alt="Our Store" className="section-image" />
           </div>
         </section>
 
@@ -55,11 +54,7 @@ const About = () => {
             <h2>Our Values</h2>
             <div className="values-grid">
               <div className="value-card">
-                <img
-                  src="/src/assets/gift-box.jpg"
-                  alt="Quality"
-                  className="value-image"
-                />
+                <img src={giftBox} alt="Quality" className="value-image" />
                 <h3>Quality</h3>
                 <p>
                   We never compromise on the quality of our ingredients or the
@@ -67,11 +62,7 @@ const About = () => {
                 </p>
               </div>
               <div className="value-card">
-                <img
-                  src="/src/assets/gift-bag.jpg"
-                  alt="Creativity"
-                  className="value-image"
-                />
+                <img src={giftBag} alt="Creativity" className="value-image" />
                 <h3>Creativity</h3>
                 <p>
                   We constantly innovate to bring you unique and exciting
