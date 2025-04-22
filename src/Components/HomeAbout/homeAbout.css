@@ -1,109 +1,114 @@
 .ha_container {
-  height: 70vh;
-  width: 100%;
-  position: relative;
+	height: 70vh;
+	width: 100%;
+	position: relative;
 }
 
 .ha_background {
-  height: 100%;
-  width: 100%;
-  background-image: url('../../assets/Store.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
+	height: 100%;
+	width: 100%;
+	background-image: url("../../assets/Store.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
 }
 
 /* This creates the darkening overlay */
 .ha_background::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.6) for darkness level */
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(
+		0,
+		0,
+		0,
+		0.5
+	); /* Adjust the last value (0.6) for darkness level */
 }
 
 .ha_content {
-  position: relative;
-  z-index: 1;
-  color:white;
-  text-align: center;
-  padding: 2rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: "Dancing Script", cursive;
-  font-weight: 700;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9); /* Adjust values for desired effect */
+	position: relative;
+	z-index: 1;
+	color: white;
+	text-align: center;
+	padding: 2rem;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9); /* Adjust values for desired effect */
 }
 
 .ha_content h1 {
-  font-size: 5rem;
-  margin-bottom: 1rem;
-  
+	font-family: "Dancing Script", cursive;
+	font-weight: 700;
+	font-size: 5rem;
+	margin-bottom: 1rem;
 }
 
 .ha_content p {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
 }
 
 .ha_info {
-  margin-top: 2rem;
+	margin-top: 2rem;
 }
 
 .ha_info p {
-  font-size: 1.7rem;
-  margin: 0.5rem 0;
+	font-size: 1.5rem;
+	margin: 0.5rem 0;
 }
 
 /* Media Queries for Responsive Text */
 @media screen and (max-width: 1200px) {
-  .ha_content h1 {
-    font-size: 4rem;
-  }
-  
-  .ha_content p {
-    font-size: 1.3rem;
-  }
-  
-  .ha_info p {
-    font-size: 1.5rem;
-  }
+	.ha_content h1 {
+		font-size: 4rem;
+	}
+
+	.ha_content p {
+		font-size: 1.3rem;
+	}
+
+	.ha_info p {
+		font-size: 1.5rem;
+	}
 }
 
 @media screen and (max-width: 768px) {
-  .ha_content h1 {
-    font-size: 3rem;
-  }
-  
-  .ha_content p {
-    font-size: 1.1rem;
-  }
-  
-  .ha_info p {
-    font-size: 1.3rem;
-  }
+	.ha_content h1 {
+		font-size: 3rem;
+	}
+
+	.ha_content p {
+		font-size: 1.1rem;
+	}
+
+	.ha_info p {
+		font-size: 1.3rem;
+	}
 }
 
 @media screen and (max-width: 480px) {
-  .ha_content h1 {
-    font-size: 2.5rem;
-  }
-  
-  .ha_content p {
-    font-size: 1rem;
-  }
-  
-  .ha_info p {
-    font-size: 1.1rem;
-  }
-  
-  .ha_content {
-    padding: 1rem;
-  }
+	.ha_content h1 {
+		font-size: 2.5rem;
+	}
+
+	.ha_content p {
+		font-size: 1rem;
+	}
+
+	.ha_info p {
+		font-size: 1.1rem;
+	}
+
+	.ha_content {
+		padding: 1rem;
+	}
 }
