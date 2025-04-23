@@ -92,12 +92,15 @@
 		margin: 0 auto; /* Center the images in their cells */
 	}
 
-	/* .modal {
-		position: fixed !important;
-		top: 50% !important;
-		left: 50% !important;
-		transform: translate(0%, -50%) !important;
-	} */
+	.modal {
+		position: absolute !important; /* Ensure modal is positioned relative to the dessert */
+		top: 50%; /* Center vertically relative to the dessert */
+		left: 50%; 
+		transform: translate(-125%, -50%) !important; /* Center the modal */
+		width: 90%; /* Adjust width for smaller screens */
+		max-width: 300px; /* Limit the maximum width */
+		padding: 20px; /* Adjust padding for smaller screens */
+	}
 }
 
 .modal {
