@@ -1,5 +1,5 @@
 .ha_container {
-	height: 70vh;
+	height: 90vh; /* Increased height */
 	width: 100%;
 	position: relative;
 }
@@ -27,7 +27,7 @@
 		0,
 		0,
 		0.5
-	); /* Adjust the last value (0.6) for darkness level */
+	); /* Adjust the last value (0.5) for darkness level */
 }
 
 .ha_content {
@@ -110,5 +110,12 @@
 
 	.ha_content {
 		padding: 1rem;
+	}
+}
+
+/* Media Queries for Larger Screens */
+@media screen and (min-width: 1200px) {
+	.ha_container {
+		height: 100vh; /* Full height for larger screens */
 	}
 }
