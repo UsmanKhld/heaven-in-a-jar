@@ -98,42 +98,31 @@ const Home = () => {
 	const modalRef = useRef(null);
 
 	const handleDessertClick = (index, event) => {
-		event.stopPropagation();
-
+		// If the same dessert is clicked, close the modal
 		if (index === selectedIndex) {
-			// Close the modal if the same dessert is clicked
 			setSelectedIndex(null);
-		} else {
-			// Prevent reopening too quickly after closing
-			if (selectedIndex !== null) {
-				setSelectedIndex(null);
-				setTimeout(() => {
-					const rect = containerRefs.current[index].getBoundingClientRect();
-					setModalPosition({
-						top: rect.top + window.scrollY + 5,
-						left: rect.left + rect.width / 2 + 230,
-					});
-					setSelectedIndex(index);
-				}, 50);
-			} else {
-				const rect = containerRefs.current[index].getBoundingClientRect();
-				setModalPosition({
-					top: rect.top + window.scrollY + 5,
-					left: rect.left + rect.width / 2 + 230,
-				});
-				setSelectedIndex(index);
-			}
+			return;
 		}
-	};
-	const closeModal = () => {
-		setSelectedIndex(null);
+
+		const rect = containerRefs.current[index].getBoundingClientRect();
+		setModalPosition({
+			top: rect.top + window.scrollY + 5,
+			left: rect.left + rect.width / 2 + 230,
+		});
+		setSelectedIndex(index);
 	};
 
 	// Close modal when clicking outside
 	useEffect(() => {
 		const handleClickOutside = (event) => {
-			if (modalRef.current && !modalRef.current.contains(event.target)) {
-				closeModal();
+			// Close modal if click is outside the modal and dessert images
+			if (
+				selectedIndex !== null && 
+				modalRef.current && 
+				!modalRef.current.contains(event.target) &&
+				!containerRefs.current[selectedIndex].contains(event.target)
+			) {
+				setSelectedIndex(null);
 			}
 		};
 
@@ -141,7 +130,7 @@ const Home = () => {
 		return () => {
 			document.removeEventListener("mousedown", handleClickOutside);
 		};
-	}, []);
+	}, [selectedIndex]);
 
 	return (
 		<div>
