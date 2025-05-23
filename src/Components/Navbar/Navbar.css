@@ -1,5 +1,5 @@
 .navbar {
-	background-color: #F3D5B5;
+	background-color: #f3d5b5;
 	padding: 1rem 2rem;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	position: sticky;
@@ -40,9 +40,9 @@
 
 @media (max-width: 768px) {
 	.logo {
-		width: 9rem;
+		width: 8rem;
 	}
-	
+
 	.nav-items {
 		display: grid;
 		grid-template-columns: auto 1fr auto;

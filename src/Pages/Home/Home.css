@@ -95,8 +95,8 @@
 	.modal {
 		position: absolute !important; /* Ensure modal is positioned relative to the dessert */
 		top: 50%; /* Center vertically relative to the dessert */
-		left: 50%; 
-		transform: translate(-125%, -50%) !important; /* Center the modal */
+		left: 50%;
+		transform: translate(-125%, 30%) !important; /* Center the modal */
 		width: 90%; /* Adjust width for smaller screens */
 		max-width: 300px; /* Limit the maximum width */
 		padding: 20px; /* Adjust padding for smaller screens */

@@ -1,57 +1,56 @@
 .spotlight-container {
-  width: 100%;
-  padding: 2rem 0;
-  background-color: #ffedd8;
+	width: 100%;
+	padding: 1rem 0; /* Reduced padding */
+	background-color: #ffedd8;
 }
 
 .spotlight-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
+	max-width: 900px; /* Reduced max-width */
+	margin: 0 auto;
+	text-align: center;
 }
 
 .spotlight-title {
-  font-size: 5rem;
-  color: #040404;
-  margin-bottom: 2rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  font-family: "Dancing Script", cursive;
-  font-weight: 700;
+	font-size: 3rem; /* Reduced font size */
+	color: #040404;
+	margin-bottom: 1.5rem; /* Reduced margin */
+	letter-spacing: 0.15em; /* Adjusted letter spacing */
+	text-transform: uppercase;
+	font-family: "Dancing Script", cursive;
+	font-weight: 700;
 }
 
 .spotlight-carousel {
-  width: 100%;
+	width: 100%;
 }
 
 .spotlight-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 0.5rem; /* Reduced padding */
 }
 
 .spotlight-image {
-  max-width: 80%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+	max-width: 70%; /* Reduced max-width */
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow */
+	transition: transform 0.3s ease;
 }
 
 .spotlight-image:hover {
-  transform: scale(1.02);
+	transform: scale(1.02);
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  .spotlight-title {
-    font-size: 3rem;
-    letter-spacing: 0.15em;
-  }
+	.spotlight-title {
+		font-size: 2rem; /* Reduced font size for smaller screens */
+		letter-spacing: 0.1em; /* Adjusted letter spacing */
+	}
 
-  .spotlight-image {
-    max-width: 100%;
-  }
+	.spotlight-image {
+		max-width: 90%; /* Adjusted for smaller screens */
+	}
 }
-
