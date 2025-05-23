@@ -1,12 +1,5 @@
 {
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "has": [{ "type": "host", "value": "heaveninajardesserts.com" }],
-      "destination": "https://www.heaveninajardesserts.com/:1",
-      "permanent": true
-    }
-  ],
+
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ]
