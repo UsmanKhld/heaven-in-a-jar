@@ -32,7 +32,7 @@
 }
 
 .spotlight-image {
-	max-width: 70%; /* Reduced max-width */
+	max-width: 100%; /* Reduced max-width */
 	height: auto;
 	border-radius: 8px;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow */
