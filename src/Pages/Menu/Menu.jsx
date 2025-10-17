@@ -108,6 +108,9 @@ const Menu = () => {
 					</div>
 				)}
 				<div className="menu-container">
+					<div style={{textAlign: 'center', fontWeight: 'bold', fontSize: '1.25rem', marginBottom: '1rem'}}>
+      All ingredients are halal
+    </div>
 					{/* <button className="clear-cart-btn" onClick={clearCart}>
             Clear Cart
           </button> */}
