@@ -9,6 +9,12 @@ const Menu = () => {
 	const [cart, setCart] = useState([]);
 	const [toast, setToast] = useState({ show: false, message: "", id: 0 });
 
+	// Modal state
+	const [showModal, setShowModal] = useState(false);
+	const [selectedItem, setSelectedItem] = useState(null);
+	const [selectedCategory, setSelectedCategory] = useState("");
+	const [selectedSize, setSelectedSize] = useState("");
+
 	useEffect(() => {
 		const menuRef = ref(database, "menuItems");
 		onValue(menuRef, (snapshot) => {
@@ -22,6 +28,16 @@ const Menu = () => {
 			setCart(JSON.parse(savedCart));
 		}
 	}, []);
+
+	// Close modal on Escape
+	useEffect(() => {
+		if (!showModal) return;
+		const onKey = (e) => {
+			if (e.key === "Escape") setShowModal(false);
+		};
+		document.addEventListener("keydown", onKey);
+		return () => document.removeEventListener("keydown", onKey);
+	}, [showModal]);
 
 	const clearCart = () => {
 		setCart([]);
@@ -63,6 +79,22 @@ const Menu = () => {
 		});
 	};
 
+	const openModal = (item, category) => {
+		setSelectedItem(item);
+		setSelectedCategory(category);
+		// pick a default size (first available)
+		const sizes = item.prices ? Object.keys(item.prices) : [];
+		setSelectedSize(sizes.length ? sizes[0] : "");
+		setShowModal(true);
+	};
+
+	const closeModal = () => {
+		setShowModal(false);
+		setSelectedItem(null);
+		setSelectedCategory("");
+		setSelectedSize("");
+	};
+
 	return (
 		<div>
 			<Navbar />
@@ -100,7 +132,7 @@ const Menu = () => {
 											// Only render if item is available
 											if (!item.isAvailable) return null;
 											return (
-												<div key={itemKey} className="menu-card">
+												<div key={itemKey} className="menu-card" onClick={() => openModal(item, category)}>
 													{item.imageUrl && (
 														<img
 															src={item.imageUrl}
@@ -125,9 +157,10 @@ const Menu = () => {
 															<div className="cart-buttons">
 																{item.prices?.["16oz"] && (
 																	<button
-																		// onClick={() =>
-																		// 	addToCart(item, category, "16oz")
-																		// }
+																		onClick={(e) => {
+																			e.stopPropagation();
+																			addToCart(item, category, "16oz");
+																		}}
 																		className="add-to-cart-btn"
 																	>
 																		Add 16oz to Cart
@@ -135,9 +168,10 @@ const Menu = () => {
 																)}
 																{item.prices?.["24oz"] && (
 																	<button
-																		// onClick={() =>
-																		// 	addToCart(item, category, "24oz")
-																		// }
+																		onClick={(e) => {
+																			e.stopPropagation();
+																			addToCart(item, category, "24oz");
+																		}}
 																		className="add-to-cart-btn"
 																	>
 																		Add 24oz to Cart
@@ -155,9 +189,10 @@ const Menu = () => {
 																	</p>
 																	<div className="cart-buttons">
 																		<button
-																			// onClick={() =>
-																			// 	addToCart(item, category, "16oz")
-																			// }
+																			onClick={(e) => {
+																				e.stopPropagation();
+																				addToCart(item, category, "16oz");
+																			}}
 																			className="add-to-cart-btn"
 																		>
 																			Add 16oz to Cart
@@ -178,21 +213,23 @@ const Menu = () => {
 																	`16oz: $${item.prices["16oz"]}`}
 															</p>
 															<div className="cart-buttons">
-																{item.prices?.["8oz"] && (
+																 {item.prices?.["8oz"] && (
 																	<button
-																		// onClick={() =>
-																		// 	addToCart(item, category, "8oz")
-																		// }
+																		onClick={(e) => {
+																			e.stopPropagation();
+																			addToCart(item, category, "8oz");
+																		}}
 																		className="add-to-cart-btn"
 																	>
 																		Add 8oz to Cart
 																	</button>
 																)}
-																{item.prices?.["16oz"] && (
+																 {item.prices?.["16oz"] && (
 																	<button
-																		// onClick={() =>
-																		// 	addToCart(item, category, "16oz")
-																		// }
+																		onClick={(e) => {
+																			e.stopPropagation();
+																			addToCart(item, category, "16oz");
+																		}}
 																		className="add-to-cart-btn"
 																	>
 																		Add 16oz to Cart
@@ -209,6 +246,65 @@ const Menu = () => {
 							)
 					)}
 				</div>
+
+				{/* Modal popup for selected item */}
+				{showModal && selectedItem && (
+					<div className="modal-overlay" onClick={closeModal}>
+						<div className="modal-card" onClick={(e) => e.stopPropagation()}>
+							<div className="modal-media">
+								{selectedItem.imageUrl ? (
+									<img src={selectedItem.imageUrl} alt={selectedItem.name} />
+								) : null}
+							</div>
+							<div className="modal-body">
+								<div>
+									<div className="modal-title">{selectedItem.name}</div>
+									<div className="modal-desc">{selectedItem.description}</div>
+
+										{selectedItem.ingredients && selectedItem.ingredients.toString().trim() !== "" && (
+											<div className="modal-ingredients">
+												<span className="modal-label">Ingredients:</span>
+												<span className="modal-value">{selectedItem.ingredients}</span>
+											</div>
+										)}
+
+										{selectedItem.allergens && selectedItem.allergens.toString().trim() !== "" && (
+											<div className="modal-allergens">
+												<span className="modal-label">Allergens:</span>
+												<span className="modal-value">{selectedItem.allergens}</span>
+											</div>
+										)}
+									
+
+								</div>
+
+								<div className="modal-sizes">
+									{selectedItem.prices && Object.keys(selectedItem.prices).map((sizeKey) => (
+										<button
+											key={sizeKey}
+											className={`size-option ${selectedSize === sizeKey ? 'active' : ''}`}
+											onClick={() => setSelectedSize(sizeKey)}
+										>
+											{sizeKey} • ${selectedItem.prices[sizeKey]}
+										</button>
+									))}
+								</div>
+
+								<div className="modal-actions">
+									<button
+										className="add-to-cart-btn"
+										onClick={() => {
+											addToCart(selectedItem, selectedCategory, selectedSize || Object.keys(selectedItem.prices || {})[0]);
+											closeModal();
+										}}
+									>
+										Add to Cart • ${selectedItem.prices ? (selectedItem.prices[selectedSize] || selectedItem.prices[Object.keys(selectedItem.prices)[0]]) : '0.00'}
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				)}
 			</main>
 			<Footer />
 		</div>
