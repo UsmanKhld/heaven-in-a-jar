@@ -7,13 +7,6 @@
 				"prices": { "8oz": 8.99 },
 				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fdesserts%2FDubaiChocDelight.png?alt=media&token=20c88515-6c91-41ed-9378-65dcf73e3dbb",
 				"isAvailable": true
-			},
-			"dubaiStrawberryCups": {
-				"name": "Dubai Strawberry Cup",
-				"description": "Strawberries in a cup with warm milk chocolate, pistachio spread, and kunefa",
-				"prices": { "16oz": 14.99 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fstrawberrycups%2FDubaiCup.jpg?alt=media&token=36ee7061-9bf6-44b9-aead-70126046d27c",
-				"isAvailable": true
 			}
 		},
 		"desserts": {
@@ -296,22 +289,6 @@
 				"isAvailable": true
 			}
 		},
-		"strawberry cups": {
-			"strawberryChocCups": {
-				"name": "Strawberry & Chocolate Cup",
-				"description": "Strawberries in a cup with warm milk chocolate",
-				"prices": { "16oz": 6.99 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fstrawberrycups%2FHeavenInAJar_Strawberry%26Chocolate_2880x2304.jpg?alt=media&token=b00496a7-a8c6-4c57-b0d6-633dbb248a5e",
-				"isAvailable": true
-			},
-			"dubaiStrawberryCups": {
-				"name": "Dubai Strawberry Cup",
-				"description": "Strawberries in a cup with warm milk chocolate, pistachio spread, and kunefa",
-				"prices": { "16oz": 14.99 },
-				"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/menu-images%2Fstrawberrycups%2FDubaiCup.jpg?alt=media&token=36ee7061-9bf6-44b9-aead-70126046d27c",
-				"isAvailable": true
-			}
-		},
 		"iced coffee": {
 			"nuttyCocoa": {
 				"name": "Nutty Cocoa",
@@ -388,10 +365,6 @@
 		}
 	},
 	"carousel": {
-		"DubaiChoc": {
-			"title": "Dubai Chocolate Strawberry Cups now available!",
-			"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/carousel%2FScreenshot_20250310_180723_Gallery%20(1).jpg?alt=media&token=9c2e0756-40bb-402f-8f05-61bebc539980"
-		},
 		"RamadanGiftBox": {
 			"title": "Give the gift of sweet heaven with our Ramadan Gift boxes",
 			"imageUrl": "https://firebasestorage.googleapis.com/v0/b/heaven-in-a-jar.firebasestorage.app/o/carousel%2FRamadan%20gift%20box%20(1).jpg?alt=media&token=0a87c4e9-1361-4d4a-a6dc-6594ad9d60df"
